@@ -1,0 +1,122 @@
+$height-nav:  64px;
+$color-nav-fonts: var(--white);
+$brand-padding: .55rem;
+$header-brand-width: 80px;
+$header-brand-width-open: 202px;
+$header-chat-width: 70px;
+
+.header-top-admin {
+  width: 100%;
+  height: $height-nav;
+
+  .header-navbar {
+    height: $height-nav;
+    color: $color-nav-fonts;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    padding-left: 0;
+    padding-right: 0;
+
+    .header-brand {
+      height: $height-nav;
+      font-size: 1rem;
+      transition: 0.3s all linear;
+      z-index: 10;
+
+      .Hamburger, .brand {
+        padding-top: $brand-padding
+      }
+
+      .brand {
+        width: 100px;
+        font-size: 1.4rem;
+        text-align: right;
+        display: block;
+        position: absolute;
+        left: 70px;
+        top: 8px;
+        cursor: pointer;
+        -webkit-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+
+    }
+
+    .header-bar {
+      width: 100%;
+      height: $height-nav;
+
+      .nav-text-link, .dropdown-item {
+        line-height: 2;
+        span {
+          &.title {
+            text-align: center;
+            font-size: 0.9rem !important;
+          }
+        }
+      }
+      .dropdown-item {
+        .icon {
+          font-size: 1.2rem;
+          margin-top: 0.2rem;
+          margin-right: .5rem;
+        }
+      }
+
+      .avatar {
+        width: 2.8rem;
+        height: 2.8rem;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        font-size: 2rem;
+        align-items: center;
+        flex-shrink: 0;
+        user-select: none;
+        border-radius: 50%;
+        justify-content: center;
+        margin-right: .6rem;
+        img {
+          height: 100%;
+          width: 100%;
+          max-width: 100%;
+          text-align: center;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .header-chat {
+      width: $header-chat-width;
+      height: $height-nav;
+      background-color: red;
+    }
+
+  }
+
+  &.opened {
+    .header-brand {
+      -webkit-flex: 0 0 12%;
+      flex: 0 0 12%;
+      max-width: 12%;
+      .brand {
+        opacity: 1;
+        transition-delay: 0.3s;
+        z-index: 10;
+      }
+    }
+  }
+
+  &.closed {
+    .header-brand {
+      flex: 0 0 80px;
+      max-width: 80px;
+      .brand {
+        opacity: 0;
+        z-index: 0;
+        overflow: hidden;
+        left: -1rem;
+      }
+    }
+  }
+}

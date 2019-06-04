@@ -1,0 +1,67 @@
+.ar-breadcrumbs {
+  height: 48px;
+  position: fixed;
+  top: $height-nav;
+  width: 100%;
+  transition: 0.3s all linear;
+  background-color: $blue-900;
+  color: $white;
+  z-index: 10;
+  box-shadow: inset 2px -1px 10px 0px rgba($black, .8);
+
+  &.closed {
+    left: 80px;
+    max-width: calc(100% - 80px);
+  }
+  &.opened {
+    left: 12%;
+    max-width: calc(100% - 12%);
+  }
+
+
+  h2 {
+    display: block;
+    min-width: 8%;
+    padding-left: 3rem;
+    padding-right: .5rem;
+    margin-top: .4rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    align-content: center;
+  }
+
+
+  .breadcrumb {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .25rem .75rem .35rem .75rem;
+    margin-top: 0.55rem;
+    margin-bottom: 0px;
+    list-style: none;
+    background-color: transparent;
+    // background-color: #e9ecef;
+    border-radius: .1rem;
+    margin-left: 20px;
+
+    .breadcrumb-item {
+      font-weight: 200;
+      a {
+        color: #629ad6;
+      }
+      &.active {
+        color: #bbbbbb;
+      }
+    }
+  }
+
+  // &.closed {
+  //   max-width: calc(100% - 80px);
+  // }
+  // &.opened {
+  //   max-width: calc(100% - 16.66667%);
+  // }
+}

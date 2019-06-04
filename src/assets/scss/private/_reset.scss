@@ -1,0 +1,99 @@
+//  ----------------
+//  Functions
+//  ----------------
+
+@mixin loop-element($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
+  @for $i from 1 through $length {
+    @if $i == 1 {
+      .#{$nameElement}0 { #{$atributeName}: 0 + $typeOfElementCalc };
+    }
+    .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + $typeOfElementCalc }; }
+  }
+}
+
+@mixin loop-element-dot($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
+  @for $i from 1 through $length {
+    @for $j from 1 through 10 {
+      @if $i == 1 {
+        .#{$nameElement}0-#{$j} { #{$atributeName}: #{'0' + '.' + ($j) + $typeOfElementCalc }; }
+      }
+      .#{$nameElement}#{$i * $baseCalc }-#{$j} { #{$atributeName}: #{( $i * $baseCalc ) + '.' + ($j) + $typeOfElementCalc }; }
+    }
+  }
+}
+
+//  ----------------
+//  Layout
+//  ----------------
+
+// width
+@include loop-element( 'w--', 'width', 1, '%', 100 );
+
+// height
+@include loop-element( 'h--', 'height', 1, '%', 100 );
+
+// margin
+@include loop-element( 'm--', 'margin', 1, 'px', 100 );
+
+// margin-left
+@include loop-element( 'm-l-', 'margin-left', 1, 'px', 100 );
+
+// margin-right
+@include loop-element( 'm-r-', 'margin-right', 1, 'px', 100 );
+
+// margin-top
+@include loop-element( 'm-t-', 'margin-top', 1, 'px', 100 );
+
+// margin-bottom
+@include loop-element( 'm-b-', 'margin-bottom', 1, 'px', 100 );
+
+// padding
+@include loop-element( 'p--', 'padding', 1, 'px', 100 );
+@include loop-element-dot( 'p-rem-', 'padding', 1, 'rem', 10 );
+
+// padding-left
+@include loop-element( 'p-l-', 'padding-left', 1, 'px', 100 );
+@include loop-element-dot( 'p-l-rem-', 'padding-left', 1, 'rem', 10 );
+
+// padding-right
+@include loop-element( 'p-r-', 'padding-right', 1, 'px', 100 );
+@include loop-element-dot( 'p-r-rem-', 'padding-right', 1, 'rem', 10 );
+
+// padding-top
+@include loop-element( 'p-t-', 'padding-top', 1, 'px', 100 );
+@include loop-element-dot( 'p-t-rem-', 'padding-top', 1, 'rem', 10 );
+
+// padding-bottom
+@include loop-element( 'p-b-', 'padding-bottom', 1, 'px', 100 );
+@include loop-element-dot( 'p-b-rem-', 'padding-bottom', 1, 'rem', 10 );
+
+
+// Font-size
+@include loop-element-dot( 'size-rem-', 'font-size', 1, 'rem', 10 );
+
+// size HxW
+.w-10 { width: 1rem; }
+.w-20 { width: 2rem; }
+.w-30 { width: 3rem; }
+.w-40 { width: 4rem; }
+.w-50 { width: 5rem; }
+.w-60 { width: 6rem; }
+.w-80 { width: 8rem; }
+.w-90 { width: 9rem; }
+.w-100 { width: 10rem; }
+
+.h-10 { height: 1rem; }
+.h-20 { height: 2rem; }
+.h-30 { height: 3rem; }
+.h-40 { height: 4rem; }
+.h-50 { height: 5rem; }
+.h-60 { height: 6rem; }
+.h-80 { height: 8rem; }
+.h-90 { height: 9rem; }
+.h-100 { height: 10rem; }
+
+
+// Border circle
+.border--circle {
+  border-radius: 50%;
+}

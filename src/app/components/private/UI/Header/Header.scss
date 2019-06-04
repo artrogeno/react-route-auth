@@ -1,0 +1,22 @@
+
+.header-top-admin {
+  .navbar {
+    .form-control {
+      padding: .75rem 1rem;
+      border-width: 0;
+      border-radius: 0;
+    }
+
+    .form-control-dark {
+      transition: .3s all linear;
+      color: #fff;
+      background-color: rgba(255, 255, 255, .1);
+      border-color: rgba(255, 255, 255, .1);
+
+      &:focus {
+        background-color: rgba(#bdbdbd, .4);
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+$width-line: 20px;
+$width-line-child: 15px;
+$width-line-child-middle: 10px;
+$width-line-row: 30px;
+
+$height-line: 2px;
+$translate-x-line: 8px;
+$rotate-line: 48deg;
+
+.SideArrow {
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 1.8rem;
+
+  .line {
+    width: $width-line-row;
+    height: $height-line;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 3px auto;
+    margin-left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .line:nth-child(1),
+  .line:nth-child(3){
+    width: $width-line-child;
+  }
+
+  .line:nth-child(1) {
+    -webkit-transform: translateX($translate-x-line) rotate($rotate-line);
+    -ms-transform: translateX($translate-x-line) rotate($rotate-line);
+    -o-transform: translateX($translate-x-line) rotate($rotate-line);
+    transform: translateX($translate-x-line) rotate($rotate-line);
+  }
+
+  .line:nth-child(2) {
+    width: $width-line;
+    margin-left: 0px;
+  }
+
+  .line:nth-child(3) {
+    -webkit-transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+    -ms-transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+    -o-transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+    transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+  }
+
+  &.active {
+
+    .line:nth-child(1) {
+      -webkit-transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+      -ms-transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+      -o-transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+      transform: translateX($translate-x-line) rotate(#{-$rotate-line});
+    }
+
+    .line:nth-child(2) {
+      width: $width-line;
+      margin-left: $width-line-child-middle;
+    }
+
+    .line:nth-child(3) {
+      -webkit-transform: translateX($translate-x-line) rotate($rotate-line);
+      -ms-transform: translateX($translate-x-line) rotate($rotate-line);
+      -o-transform: translateX($translate-x-line) rotate($rotate-line);
+      transform: translateX($translate-x-line) rotate($rotate-line);
+    }
+
+  }
+
+}

@@ -1,0 +1,62 @@
+$btn-animate-bg-color: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+$btn-color-hover-transparent: rgba(255, 255, 255, 0.1) !important;
+
+.btn--transparence {
+  background-color: transparent !important;
+}
+
+
+.btn-dropdown {
+  display: flex !important;
+  border-radius: .4rem;
+  // padding-left: 1.4rem !important;
+  // padding-right: 1.4rem !important;
+  padding: .3rem 1.4rem !important;;
+}
+
+.btn--circle{
+  border-radius: 50%;
+}
+
+.btn--hover {
+  display: flex;
+  flex: 0 0 auto;
+  vertical-align: middle;
+  align-items: center;
+  text-decoration: none !important;
+  padding: 12px;
+  overflow: visible;
+  text-align: center;
+  transition: $btn-animate-bg-color;
+  padding: 0;
+  justify-content: center;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.btn-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  .icon {
+    align-self: center !important;
+  }
+}
+
+
+.bg-admin-dark {
+  .btn--hover {
+    color: $white !important;
+    &:hover {
+      background-color: $btn-color-hover-transparent;
+    }
+  }
+  .nav-item {
+    &.show {
+      .btn--hover {
+        background-color: $btn-color-hover-transparent;
+      }
+    }
+  }
+}

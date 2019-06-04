@@ -1,0 +1,3144 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$artrogenos-dev-font-family}';
+  src:  url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.eot?hvw90f');
+  src:  url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.eot?hvw90f#iefix') format('embedded-opentype'),
+    url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.ttf?hvw90f') format('truetype'),
+    url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.woff?hvw90f') format('woff'),
+    url('#{$artrogenos-dev-font-path}/#{$artrogenos-dev-font-family}.svg?hvw90f##{$artrogenos-dev-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ar-dev-"], [class*=" ar-dev-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$artrogenos-dev-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ar-dev-acm {
+  &:before {
+    content: $ar-acm-dev;
+  }
+}
+.ar-dev-addthis {
+  &:before {
+    content: $ar-addthis-dev;
+  }
+}
+.ar-dev-adobe {
+  &:before {
+    content: $ar-adobe-dev;
+  }
+}
+.ar-dev-adobeacrobatreader {
+  &:before {
+    content: $ar-adobeacrobatreader-dev;
+  }
+}
+.ar-dev-adobeaftereffects {
+  &:before {
+    content: $ar-adobeaftereffects-dev;
+  }
+}
+.ar-dev-adobeaudition {
+  &:before {
+    content: $ar-adobeaudition-dev;
+  }
+}
+.ar-dev-adobecreativecloud {
+  &:before {
+    content: $ar-adobecreativecloud-dev;
+  }
+}
+.ar-dev-adobedreamweaver {
+  &:before {
+    content: $ar-adobedreamweaver-dev;
+  }
+}
+.ar-dev-adobeillustrator {
+  &:before {
+    content: $ar-adobeillustrator-dev;
+  }
+}
+.ar-dev-adobeindesign {
+  &:before {
+    content: $ar-adobeindesign-dev;
+  }
+}
+.ar-dev-adobelightroomcc {
+  &:before {
+    content: $ar-adobelightroomcc-dev;
+  }
+}
+.ar-dev-adobelightroomclassic {
+  &:before {
+    content: $ar-adobelightroomclassic-dev;
+  }
+}
+.ar-dev-adobephotoshop {
+  &:before {
+    content: $ar-adobephotoshop-dev;
+  }
+}
+.ar-dev-adobepremiere {
+  &:before {
+    content: $ar-adobepremiere-dev;
+  }
+}
+.ar-dev-adobetypekit {
+  &:before {
+    content: $ar-adobetypekit-dev;
+  }
+}
+.ar-dev-adobexd {
+  &:before {
+    content: $ar-adobexd-dev;
+  }
+}
+.ar-dev-airbnb {
+  &:before {
+    content: $ar-airbnb-dev;
+  }
+}
+.ar-dev-amazon {
+  &:before {
+    content: $ar-amazon-dev;
+  }
+}
+.ar-dev-amazonaws {
+  &:before {
+    content: $ar-amazonaws-dev;
+  }
+}
+.ar-dev-amd {
+  &:before {
+    content: $ar-amd-dev;
+  }
+}
+.ar-dev-americanexpress {
+  &:before {
+    content: $ar-americanexpress-dev;
+  }
+}
+.ar-dev-android {
+  &:before {
+    content: $ar-android-dev;
+  }
+}
+.ar-dev-angellist {
+  &:before {
+    content: $ar-angellist-dev;
+  }
+}
+.ar-dev-angular {
+  &:before {
+    content: $ar-angular-dev;
+  }
+}
+.ar-dev-angularuniversal {
+  &:before {
+    content: $ar-angularuniversal-dev;
+  }
+}
+.ar-dev-apache {
+  &:before {
+    content: $ar-apache-dev;
+  }
+}
+.ar-dev-apple {
+  &:before {
+    content: $ar-apple-dev;
+  }
+}
+.ar-dev-applemusic {
+  &:before {
+    content: $ar-applemusic-dev;
+  }
+}
+.ar-dev-applepay {
+  &:before {
+    content: $ar-applepay-dev;
+  }
+}
+.ar-dev-appveyor {
+  &:before {
+    content: $ar-appveyor-dev;
+  }
+}
+.ar-dev-archiveofourown {
+  &:before {
+    content: $ar-archiveofourown-dev;
+  }
+}
+.ar-dev-archlinux {
+  &:before {
+    content: $ar-archlinux-dev;
+  }
+}
+.ar-dev-artstation {
+  &:before {
+    content: $ar-artstation-dev;
+  }
+}
+.ar-dev-asana {
+  &:before {
+    content: $ar-asana-dev;
+  }
+}
+.ar-dev-at-and-t {
+  &:before {
+    content: $ar-at-and-t-dev;
+  }
+}
+.ar-dev-atlassian {
+  &:before {
+    content: $ar-atlassian-dev;
+  }
+}
+.ar-dev-atom {
+  &:before {
+    content: $ar-atom-dev;
+  }
+}
+.ar-dev-audible {
+  &:before {
+    content: $ar-audible-dev;
+  }
+}
+.ar-dev-aurelia {
+  &:before {
+    content: $ar-aurelia-dev;
+  }
+}
+.ar-dev-auth0 {
+  &:before {
+    content: $ar-auth0-dev;
+  }
+}
+.ar-dev-automatic {
+  &:before {
+    content: $ar-automatic-dev;
+  }
+}
+.ar-dev-autotask {
+  &:before {
+    content: $ar-autotask-dev;
+  }
+}
+.ar-dev-aventrix {
+  &:before {
+    content: $ar-aventrix-dev;
+  }
+}
+.ar-dev-azuredevops {
+  &:before {
+    content: $ar-azuredevops-dev;
+  }
+}
+.ar-dev-azurepipelines {
+  &:before {
+    content: $ar-azurepipelines-dev;
+  }
+}
+.ar-dev-baidu {
+  &:before {
+    content: $ar-baidu-dev;
+  }
+}
+.ar-dev-bamboo {
+  &:before {
+    content: $ar-bamboo-dev;
+  }
+}
+.ar-dev-bandcamp {
+  &:before {
+    content: $ar-bandcamp-dev;
+  }
+}
+.ar-dev-basecamp {
+  &:before {
+    content: $ar-basecamp-dev;
+  }
+}
+.ar-dev-bathasu {
+  &:before {
+    content: $ar-bathasu-dev;
+  }
+}
+.ar-dev-beats {
+  &:before {
+    content: $ar-beats-dev;
+  }
+}
+.ar-dev-behance {
+  &:before {
+    content: $ar-behance-dev;
+  }
+}
+.ar-dev-bigcartel {
+  &:before {
+    content: $ar-bigcartel-dev;
+  }
+}
+.ar-dev-bing {
+  &:before {
+    content: $ar-bing-dev;
+  }
+}
+.ar-dev-bit {
+  &:before {
+    content: $ar-bit-dev;
+  }
+}
+.ar-dev-bitbucket {
+  &:before {
+    content: $ar-bitbucket-dev;
+  }
+}
+.ar-dev-bitcoin {
+  &:before {
+    content: $ar-bitcoin-dev;
+  }
+}
+.ar-dev-bitdefender {
+  &:before {
+    content: $ar-bitdefender-dev;
+  }
+}
+.ar-dev-bitly {
+  &:before {
+    content: $ar-bitly-dev;
+  }
+}
+.ar-dev-blender {
+  &:before {
+    content: $ar-blender-dev;
+  }
+}
+.ar-dev-blogger {
+  &:before {
+    content: $ar-blogger-dev;
+  }
+}
+.ar-dev-boost {
+  &:before {
+    content: $ar-boost-dev;
+  }
+}
+.ar-dev-bootstrap {
+  &:before {
+    content: $ar-bootstrap-dev;
+  }
+}
+.ar-dev-bower {
+  &:before {
+    content: $ar-bower-dev;
+  }
+}
+.ar-dev-brand-dot-ai {
+  &:before {
+    content: $ar-brand-dot-ai-dev;
+  }
+}
+.ar-dev-buddy {
+  &:before {
+    content: $ar-buddy-dev;
+  }
+}
+.ar-dev-buffer {
+  &:before {
+    content: $ar-buffer-dev;
+  }
+}
+.ar-dev-buymeacoffee {
+  &:before {
+    content: $ar-buymeacoffee-dev;
+  }
+}
+.ar-dev-buzzfeed {
+  &:before {
+    content: $ar-buzzfeed-dev;
+  }
+}
+.ar-dev-cakephp {
+  &:before {
+    content: $ar-cakephp-dev;
+  }
+}
+.ar-dev-campaignmonitor {
+  &:before {
+    content: $ar-campaignmonitor-dev;
+  }
+}
+.ar-dev-cashapp {
+  &:before {
+    content: $ar-cashapp-dev;
+  }
+}
+.ar-dev-castorama {
+  &:before {
+    content: $ar-castorama-dev;
+  }
+}
+.ar-dev-castro {
+  &:before {
+    content: $ar-castro-dev;
+  }
+}
+.ar-dev-cevo {
+  &:before {
+    content: $ar-cevo-dev;
+  }
+}
+.ar-dev-chase {
+  &:before {
+    content: $ar-chase-dev;
+  }
+}
+.ar-dev-circle {
+  &:before {
+    content: $ar-circle-dev;
+  }
+}
+.ar-dev-circleci {
+  &:before {
+    content: $ar-circleci-dev;
+  }
+}
+.ar-dev-civicrm {
+  &:before {
+    content: $ar-civicrm-dev;
+  }
+}
+.ar-dev-clockify {
+  &:before {
+    content: $ar-clockify-dev;
+  }
+}
+.ar-dev-clojure {
+  &:before {
+    content: $ar-clojure-dev;
+  }
+}
+.ar-dev-cloudflare {
+  &:before {
+    content: $ar-cloudflare-dev;
+  }
+}
+.ar-dev-cmake {
+  &:before {
+    content: $ar-cmake-dev;
+  }
+}
+.ar-dev-co-op {
+  &:before {
+    content: $ar-co-op-dev;
+  }
+}
+.ar-dev-codacy {
+  &:before {
+    content: $ar-codacy-dev;
+  }
+}
+.ar-dev-codecademy {
+  &:before {
+    content: $ar-codecademy-dev;
+  }
+}
+.ar-dev-codeclimate {
+  &:before {
+    content: $ar-codeclimate-dev;
+  }
+}
+.ar-dev-codecov {
+  &:before {
+    content: $ar-codecov-dev;
+  }
+}
+.ar-dev-codeforces {
+  &:before {
+    content: $ar-codeforces-dev;
+  }
+}
+.ar-dev-codeigniter {
+  &:before {
+    content: $ar-codeigniter-dev;
+  }
+}
+.ar-dev-codepen {
+  &:before {
+    content: $ar-codepen-dev;
+  }
+}
+.ar-dev-coderwall {
+  &:before {
+    content: $ar-coderwall-dev;
+  }
+}
+.ar-dev-codesandbox {
+  &:before {
+    content: $ar-codesandbox-dev;
+  }
+}
+.ar-dev-codeship {
+  &:before {
+    content: $ar-codeship-dev;
+  }
+}
+.ar-dev-codewars {
+  &:before {
+    content: $ar-codewars-dev;
+  }
+}
+.ar-dev-codio {
+  &:before {
+    content: $ar-codio-dev;
+  }
+}
+.ar-dev-coffeescript {
+  &:before {
+    content: $ar-coffeescript-dev;
+  }
+}
+.ar-dev-commonworkflowlanguage {
+  &:before {
+    content: $ar-commonworkflowlanguage-dev;
+  }
+}
+.ar-dev-compropago {
+  &:before {
+    content: $ar-compropago-dev;
+  }
+}
+.ar-dev-conda-forge {
+  &:before {
+    content: $ar-conda-forge-dev;
+  }
+}
+.ar-dev-conekta {
+  &:before {
+    content: $ar-conekta-dev;
+  }
+}
+.ar-dev-confluence {
+  &:before {
+    content: $ar-confluence-dev;
+  }
+}
+.ar-dev-coursera {
+  &:before {
+    content: $ar-coursera-dev;
+  }
+}
+.ar-dev-cplusplus {
+  &:before {
+    content: $ar-cplusplus-dev;
+  }
+}
+.ar-dev-creativecommons {
+  &:before {
+    content: $ar-creativecommons-dev;
+  }
+}
+.ar-dev-crunchbase {
+  &:before {
+    content: $ar-crunchbase-dev;
+  }
+}
+.ar-dev-css3 {
+  &:before {
+    content: $ar-css3-dev;
+  }
+}
+.ar-dev-csswizardry {
+  &:before {
+    content: $ar-csswizardry-dev;
+  }
+}
+.ar-dev-d3-dot-js {
+  &:before {
+    content: $ar-d3-dot-js-dev;
+  }
+}
+.ar-dev-dailymotion {
+  &:before {
+    content: $ar-dailymotion-dev;
+  }
+}
+.ar-dev-dazn {
+  &:before {
+    content: $ar-dazn-dev;
+  }
+}
+.ar-dev-dblp {
+  &:before {
+    content: $ar-dblp-dev;
+  }
+}
+.ar-dev-debian {
+  &:before {
+    content: $ar-debian-dev;
+  }
+}
+.ar-dev-deezer {
+  &:before {
+    content: $ar-deezer-dev;
+  }
+}
+.ar-dev-delicious {
+  &:before {
+    content: $ar-delicious-dev;
+  }
+}
+.ar-dev-dell {
+  &:before {
+    content: $ar-dell-dev;
+  }
+}
+.ar-dev-deno {
+  &:before {
+    content: $ar-deno-dev;
+  }
+}
+.ar-dev-dependabot {
+  &:before {
+    content: $ar-dependabot-dev;
+  }
+}
+.ar-dev-designernews {
+  &:before {
+    content: $ar-designernews-dev;
+  }
+}
+.ar-dev-dev-dot-to {
+  &:before {
+    content: $ar-dev-dot-to-dev;
+  }
+}
+.ar-dev-deviantart {
+  &:before {
+    content: $ar-deviantart-dev;
+  }
+}
+.ar-dev-devrant {
+  &:before {
+    content: $ar-devrant-dev;
+  }
+}
+.ar-dev-diaspora {
+  &:before {
+    content: $ar-diaspora-dev;
+  }
+}
+.ar-dev-digg {
+  &:before {
+    content: $ar-digg-dev;
+  }
+}
+.ar-dev-digitalocean {
+  &:before {
+    content: $ar-digitalocean-dev;
+  }
+}
+.ar-dev-discord {
+  &:before {
+    content: $ar-discord-dev;
+  }
+}
+.ar-dev-discourse {
+  &:before {
+    content: $ar-discourse-dev;
+  }
+}
+.ar-dev-discover {
+  &:before {
+    content: $ar-discover-dev;
+  }
+}
+.ar-dev-disqus {
+  &:before {
+    content: $ar-disqus-dev;
+  }
+}
+.ar-dev-disroot {
+  &:before {
+    content: $ar-disroot-dev;
+  }
+}
+.ar-dev-django {
+  &:before {
+    content: $ar-django-dev;
+  }
+}
+.ar-dev-docker {
+  &:before {
+    content: $ar-docker-dev;
+  }
+}
+.ar-dev-docusign {
+  &:before {
+    content: $ar-docusign-dev;
+  }
+}
+.ar-dev-dot-net {
+  &:before {
+    content: $ar-dot-net-dev;
+  }
+}
+.ar-dev-draugiem-dot-lv {
+  &:before {
+    content: $ar-draugiem-dot-lv-dev;
+  }
+}
+.ar-dev-dribbble {
+  &:before {
+    content: $ar-dribbble-dev;
+  }
+}
+.ar-dev-drone {
+  &:before {
+    content: $ar-drone-dev;
+  }
+}
+.ar-dev-dropbox {
+  &:before {
+    content: $ar-dropbox-dev;
+  }
+}
+.ar-dev-drupal {
+  &:before {
+    content: $ar-drupal-dev;
+  }
+}
+.ar-dev-dtube {
+  &:before {
+    content: $ar-dtube-dev;
+  }
+}
+.ar-dev-duckduckgo {
+  &:before {
+    content: $ar-duckduckgo-dev;
+  }
+}
+.ar-dev-ebay {
+  &:before {
+    content: $ar-ebay-dev;
+  }
+}
+.ar-dev-eclipseide {
+  &:before {
+    content: $ar-eclipseide-dev;
+  }
+}
+.ar-dev-elastic {
+  &:before {
+    content: $ar-elastic-dev;
+  }
+}
+.ar-dev-elasticcloud {
+  &:before {
+    content: $ar-elasticcloud-dev;
+  }
+}
+.ar-dev-elasticsearch {
+  &:before {
+    content: $ar-elasticsearch-dev;
+  }
+}
+.ar-dev-elasticstack {
+  &:before {
+    content: $ar-elasticstack-dev;
+  }
+}
+.ar-dev-electron {
+  &:before {
+    content: $ar-electron-dev;
+  }
+}
+.ar-dev-elementary {
+  &:before {
+    content: $ar-elementary-dev;
+  }
+}
+.ar-dev-ello {
+  &:before {
+    content: $ar-ello-dev;
+  }
+}
+.ar-dev-empirekred {
+  &:before {
+    content: $ar-empirekred-dev;
+  }
+}
+.ar-dev-envato {
+  &:before {
+    content: $ar-envato-dev;
+  }
+}
+.ar-dev-esea {
+  &:before {
+    content: $ar-esea-dev;
+  }
+}
+.ar-dev-eslint {
+  &:before {
+    content: $ar-eslint-dev;
+  }
+}
+.ar-dev-ethereum {
+  &:before {
+    content: $ar-ethereum-dev;
+  }
+}
+.ar-dev-etsy {
+  &:before {
+    content: $ar-etsy-dev;
+  }
+}
+.ar-dev-eventbrite {
+  &:before {
+    content: $ar-eventbrite-dev;
+  }
+}
+.ar-dev-eventstore {
+  &:before {
+    content: $ar-eventstore-dev;
+  }
+}
+.ar-dev-evernote {
+  &:before {
+    content: $ar-evernote-dev;
+  }
+}
+.ar-dev-everplaces {
+  &:before {
+    content: $ar-everplaces-dev;
+  }
+}
+.ar-dev-evry {
+  &:before {
+    content: $ar-evry-dev;
+  }
+}
+.ar-dev-expertsexchange {
+  &:before {
+    content: $ar-expertsexchange-dev;
+  }
+}
+.ar-dev-f-secure {
+  &:before {
+    content: $ar-f-secure-dev;
+  }
+}
+.ar-dev-facebook {
+  &:before {
+    content: $ar-facebook-dev;
+  }
+}
+.ar-dev-faceit {
+  &:before {
+    content: $ar-faceit-dev;
+  }
+}
+.ar-dev-fandango {
+  &:before {
+    content: $ar-fandango-dev;
+  }
+}
+.ar-dev-favro {
+  &:before {
+    content: $ar-favro-dev;
+  }
+}
+.ar-dev-feathub {
+  &:before {
+    content: $ar-feathub-dev;
+  }
+}
+.ar-dev-fedora {
+  &:before {
+    content: $ar-fedora-dev;
+  }
+}
+.ar-dev-feedly {
+  &:before {
+    content: $ar-feedly-dev;
+  }
+}
+.ar-dev-fidoalliance {
+  &:before {
+    content: $ar-fidoalliance-dev;
+  }
+}
+.ar-dev-figma {
+  &:before {
+    content: $ar-figma-dev;
+  }
+}
+.ar-dev-firebase {
+  &:before {
+    content: $ar-firebase-dev;
+  }
+}
+.ar-dev-fitbit {
+  &:before {
+    content: $ar-fitbit-dev;
+  }
+}
+.ar-dev-flask {
+  &:before {
+    content: $ar-flask-dev;
+  }
+}
+.ar-dev-flattr {
+  &:before {
+    content: $ar-flattr-dev;
+  }
+}
+.ar-dev-flickr {
+  &:before {
+    content: $ar-flickr-dev;
+  }
+}
+.ar-dev-flipboard {
+  &:before {
+    content: $ar-flipboard-dev;
+  }
+}
+.ar-dev-flutter {
+  &:before {
+    content: $ar-flutter-dev;
+  }
+}
+.ar-dev-fnac {
+  &:before {
+    content: $ar-fnac-dev;
+  }
+}
+.ar-dev-foursquare {
+  &:before {
+    content: $ar-foursquare-dev;
+  }
+}
+.ar-dev-framer {
+  &:before {
+    content: $ar-framer-dev;
+  }
+}
+.ar-dev-freebsd {
+  &:before {
+    content: $ar-freebsd-dev;
+  }
+}
+.ar-dev-freecodecamp {
+  &:before {
+    content: $ar-freecodecamp-dev;
+  }
+}
+.ar-dev-furaffinity {
+  &:before {
+    content: $ar-furaffinity-dev;
+  }
+}
+.ar-dev-furrynetwork {
+  &:before {
+    content: $ar-furrynetwork-dev;
+  }
+}
+.ar-dev-garmin {
+  &:before {
+    content: $ar-garmin-dev;
+  }
+}
+.ar-dev-gatsby {
+  &:before {
+    content: $ar-gatsby-dev;
+  }
+}
+.ar-dev-gauges {
+  &:before {
+    content: $ar-gauges-dev;
+  }
+}
+.ar-dev-geocaching {
+  &:before {
+    content: $ar-geocaching-dev;
+  }
+}
+.ar-dev-gerrit {
+  &:before {
+    content: $ar-gerrit-dev;
+  }
+}
+.ar-dev-ghost {
+  &:before {
+    content: $ar-ghost-dev;
+  }
+}
+.ar-dev-git {
+  &:before {
+    content: $ar-git-dev;
+  }
+}
+.ar-dev-github {
+  &:before {
+    content: $ar-github-dev;
+  }
+}
+.ar-dev-gitlab {
+  &:before {
+    content: $ar-gitlab-dev;
+  }
+}
+.ar-dev-gitter {
+  &:before {
+    content: $ar-gitter-dev;
+  }
+}
+.ar-dev-glassdoor {
+  &:before {
+    content: $ar-glassdoor-dev;
+  }
+}
+.ar-dev-gmail {
+  &:before {
+    content: $ar-gmail-dev;
+  }
+}
+.ar-dev-gnu {
+  &:before {
+    content: $ar-gnu-dev;
+  }
+}
+.ar-dev-gnusocial {
+  &:before {
+    content: $ar-gnusocial-dev;
+  }
+}
+.ar-dev-go {
+  &:before {
+    content: $ar-go-dev;
+  }
+}
+.ar-dev-gog-dot-com {
+  &:before {
+    content: $ar-gog-dot-com-dev;
+  }
+}
+.ar-dev-goldenline {
+  &:before {
+    content: $ar-goldenline-dev;
+  }
+}
+.ar-dev-goodreads {
+  &:before {
+    content: $ar-goodreads-dev;
+  }
+}
+.ar-dev-google {
+  &:before {
+    content: $ar-google-dev;
+  }
+}
+.ar-dev-googleallo {
+  &:before {
+    content: $ar-googleallo-dev;
+  }
+}
+.ar-dev-googleanalytics {
+  &:before {
+    content: $ar-googleanalytics-dev;
+  }
+}
+.ar-dev-googlechrome {
+  &:before {
+    content: $ar-googlechrome-dev;
+  }
+}
+.ar-dev-googledrive {
+  &:before {
+    content: $ar-googledrive-dev;
+  }
+}
+.ar-dev-googlehangouts {
+  &:before {
+    content: $ar-googlehangouts-dev;
+  }
+}
+.ar-dev-googlehangoutschat {
+  &:before {
+    content: $ar-googlehangoutschat-dev;
+  }
+}
+.ar-dev-googlekeep {
+  &:before {
+    content: $ar-googlekeep-dev;
+  }
+}
+.ar-dev-googlepay {
+  &:before {
+    content: $ar-googlepay-dev;
+  }
+}
+.ar-dev-googleplay {
+  &:before {
+    content: $ar-googleplay-dev;
+  }
+}
+.ar-dev-googleplus {
+  &:before {
+    content: $ar-googleplus-dev;
+  }
+}
+.ar-dev-googlepodcasts {
+  &:before {
+    content: $ar-googlepodcasts-dev;
+  }
+}
+.ar-dev-gov-dot-uk {
+  &:before {
+    content: $ar-gov-dot-uk-dev;
+  }
+}
+.ar-dev-grafana {
+  &:before {
+    content: $ar-grafana-dev;
+  }
+}
+.ar-dev-graphcool {
+  &:before {
+    content: $ar-graphcool-dev;
+  }
+}
+.ar-dev-graphql {
+  &:before {
+    content: $ar-graphql-dev;
+  }
+}
+.ar-dev-grav {
+  &:before {
+    content: $ar-grav-dev;
+  }
+}
+.ar-dev-gravatar {
+  &:before {
+    content: $ar-gravatar-dev;
+  }
+}
+.ar-dev-groupon {
+  &:before {
+    content: $ar-groupon-dev;
+  }
+}
+.ar-dev-gulp {
+  &:before {
+    content: $ar-gulp-dev;
+  }
+}
+.ar-dev-gumroad {
+  &:before {
+    content: $ar-gumroad-dev;
+  }
+}
+.ar-dev-gumtree {
+  &:before {
+    content: $ar-gumtree-dev;
+  }
+}
+.ar-dev-hackaday {
+  &:before {
+    content: $ar-hackaday-dev;
+  }
+}
+.ar-dev-hackerrank {
+  &:before {
+    content: $ar-hackerrank-dev;
+  }
+}
+.ar-dev-hackhands {
+  &:before {
+    content: $ar-hackhands-dev;
+  }
+}
+.ar-dev-hackster {
+  &:before {
+    content: $ar-hackster-dev;
+  }
+}
+.ar-dev-hashnode {
+  &:before {
+    content: $ar-hashnode-dev;
+  }
+}
+.ar-dev-haskell {
+  &:before {
+    content: $ar-haskell-dev;
+  }
+}
+.ar-dev-hatenabookmark {
+  &:before {
+    content: $ar-hatenabookmark-dev;
+  }
+}
+.ar-dev-here {
+  &:before {
+    content: $ar-here-dev;
+  }
+}
+.ar-dev-heroku {
+  &:before {
+    content: $ar-heroku-dev;
+  }
+}
+.ar-dev-hexo {
+  &:before {
+    content: $ar-hexo-dev;
+  }
+}
+.ar-dev-highly {
+  &:before {
+    content: $ar-highly-dev;
+  }
+}
+.ar-dev-hipchat {
+  &:before {
+    content: $ar-hipchat-dev;
+  }
+}
+.ar-dev-hockeyapp {
+  &:before {
+    content: $ar-hockeyapp-dev;
+  }
+}
+.ar-dev-homify {
+  &:before {
+    content: $ar-homify-dev;
+  }
+}
+.ar-dev-hootsuite {
+  &:before {
+    content: $ar-hootsuite-dev;
+  }
+}
+.ar-dev-houzz {
+  &:before {
+    content: $ar-houzz-dev;
+  }
+}
+.ar-dev-html5 {
+  &:before {
+    content: $ar-html5-dev;
+  }
+}
+.ar-dev-huawei {
+  &:before {
+    content: $ar-huawei-dev;
+  }
+}
+.ar-dev-hubspot {
+  &:before {
+    content: $ar-hubspot-dev;
+  }
+}
+.ar-dev-hulu {
+  &:before {
+    content: $ar-hulu-dev;
+  }
+}
+.ar-dev-humblebundle {
+  &:before {
+    content: $ar-humblebundle-dev;
+  }
+}
+.ar-dev-icloud {
+  &:before {
+    content: $ar-icloud-dev;
+  }
+}
+.ar-dev-iconjar {
+  &:before {
+    content: $ar-iconjar-dev;
+  }
+}
+.ar-dev-icq {
+  &:before {
+    content: $ar-icq-dev;
+  }
+}
+.ar-dev-ifixit {
+  &:before {
+    content: $ar-ifixit-dev;
+  }
+}
+.ar-dev-imdb {
+  &:before {
+    content: $ar-imdb-dev;
+  }
+}
+.ar-dev-inkscape {
+  &:before {
+    content: $ar-inkscape-dev;
+  }
+}
+.ar-dev-instacart {
+  &:before {
+    content: $ar-instacart-dev;
+  }
+}
+.ar-dev-instagram {
+  &:before {
+    content: $ar-instagram-dev;
+  }
+}
+.ar-dev-instapaper {
+  &:before {
+    content: $ar-instapaper-dev;
+  }
+}
+.ar-dev-intel {
+  &:before {
+    content: $ar-intel-dev;
+  }
+}
+.ar-dev-intercom {
+  &:before {
+    content: $ar-intercom-dev;
+  }
+}
+.ar-dev-internetexplorer {
+  &:before {
+    content: $ar-internetexplorer-dev;
+  }
+}
+.ar-dev-invision {
+  &:before {
+    content: $ar-invision-dev;
+  }
+}
+.ar-dev-ionic {
+  &:before {
+    content: $ar-ionic-dev;
+  }
+}
+.ar-dev-itch-dot-io {
+  &:before {
+    content: $ar-itch-dot-io-dev;
+  }
+}
+.ar-dev-jabber {
+  &:before {
+    content: $ar-jabber-dev;
+  }
+}
+.ar-dev-java {
+  &:before {
+    content: $ar-java-dev;
+  }
+}
+.ar-dev-javascript {
+  &:before {
+    content: $ar-javascript-dev;
+  }
+}
+.ar-dev-jekyll {
+  &:before {
+    content: $ar-jekyll-dev;
+  }
+}
+.ar-dev-jenkins {
+  &:before {
+    content: $ar-jenkins-dev;
+  }
+}
+.ar-dev-jest {
+  &:before {
+    content: $ar-jest-dev;
+  }
+}
+.ar-dev-jira {
+  &:before {
+    content: $ar-jira-dev;
+  }
+}
+.ar-dev-joomla {
+  &:before {
+    content: $ar-joomla-dev;
+  }
+}
+.ar-dev-jquery {
+  &:before {
+    content: $ar-jquery-dev;
+  }
+}
+.ar-dev-jsdelivr {
+  &:before {
+    content: $ar-jsdelivr-dev;
+  }
+}
+.ar-dev-jsfiddle {
+  &:before {
+    content: $ar-jsfiddle-dev;
+  }
+}
+.ar-dev-json {
+  &:before {
+    content: $ar-json-dev;
+  }
+}
+.ar-dev-jupyter {
+  &:before {
+    content: $ar-jupyter-dev;
+  }
+}
+.ar-dev-justgiving {
+  &:before {
+    content: $ar-justgiving-dev;
+  }
+}
+.ar-dev-kaggle {
+  &:before {
+    content: $ar-kaggle-dev;
+  }
+}
+.ar-dev-kaios {
+  &:before {
+    content: $ar-kaios-dev;
+  }
+}
+.ar-dev-kentico {
+  &:before {
+    content: $ar-kentico-dev;
+  }
+}
+.ar-dev-keybase {
+  &:before {
+    content: $ar-keybase-dev;
+  }
+}
+.ar-dev-keycdn {
+  &:before {
+    content: $ar-keycdn-dev;
+  }
+}
+.ar-dev-khanacademy {
+  &:before {
+    content: $ar-khanacademy-dev;
+  }
+}
+.ar-dev-kibana {
+  &:before {
+    content: $ar-kibana-dev;
+  }
+}
+.ar-dev-kickstarter {
+  &:before {
+    content: $ar-kickstarter-dev;
+  }
+}
+.ar-dev-kik {
+  &:before {
+    content: $ar-kik-dev;
+  }
+}
+.ar-dev-kirby {
+  &:before {
+    content: $ar-kirby-dev;
+  }
+}
+.ar-dev-klout {
+  &:before {
+    content: $ar-klout-dev;
+  }
+}
+.ar-dev-known {
+  &:before {
+    content: $ar-known-dev;
+  }
+}
+.ar-dev-ko-fi {
+  &:before {
+    content: $ar-ko-fi-dev;
+  }
+}
+.ar-dev-koding {
+  &:before {
+    content: $ar-koding-dev;
+  }
+}
+.ar-dev-kotlin {
+  &:before {
+    content: $ar-kotlin-dev;
+  }
+}
+.ar-dev-kubernetes {
+  &:before {
+    content: $ar-kubernetes-dev;
+  }
+}
+.ar-dev-lanyrd {
+  &:before {
+    content: $ar-lanyrd-dev;
+  }
+}
+.ar-dev-laravel {
+  &:before {
+    content: $ar-laravel-dev;
+  }
+}
+.ar-dev-laravelhorizon {
+  &:before {
+    content: $ar-laravelhorizon-dev;
+  }
+}
+.ar-dev-last-dot-fm {
+  &:before {
+    content: $ar-last-dot-fm-dev;
+  }
+}
+.ar-dev-launchpad {
+  &:before {
+    content: $ar-launchpad-dev;
+  }
+}
+.ar-dev-leetcode {
+  &:before {
+    content: $ar-leetcode-dev;
+  }
+}
+.ar-dev-letsencrypt {
+  &:before {
+    content: $ar-letsencrypt-dev;
+  }
+}
+.ar-dev-letterboxd {
+  &:before {
+    content: $ar-letterboxd-dev;
+  }
+}
+.ar-dev-lgtm {
+  &:before {
+    content: $ar-lgtm-dev;
+  }
+}
+.ar-dev-liberapay {
+  &:before {
+    content: $ar-liberapay-dev;
+  }
+}
+.ar-dev-librarything {
+  &:before {
+    content: $ar-librarything-dev;
+  }
+}
+.ar-dev-line {
+  &:before {
+    content: $ar-line-dev;
+  }
+}
+.ar-dev-linewebtoon {
+  &:before {
+    content: $ar-linewebtoon-dev;
+  }
+}
+.ar-dev-linkedin {
+  &:before {
+    content: $ar-linkedin-dev;
+  }
+}
+.ar-dev-linux {
+  &:before {
+    content: $ar-linux-dev;
+  }
+}
+.ar-dev-linuxfoundation {
+  &:before {
+    content: $ar-linuxfoundation-dev;
+  }
+}
+.ar-dev-linuxmint {
+  &:before {
+    content: $ar-linuxmint-dev;
+  }
+}
+.ar-dev-livejournal {
+  &:before {
+    content: $ar-livejournal-dev;
+  }
+}
+.ar-dev-livestream {
+  &:before {
+    content: $ar-livestream-dev;
+  }
+}
+.ar-dev-logstash {
+  &:before {
+    content: $ar-logstash-dev;
+  }
+}
+.ar-dev-lua {
+  &:before {
+    content: $ar-lua-dev;
+  }
+}
+.ar-dev-macys {
+  &:before {
+    content: $ar-macys-dev;
+  }
+}
+.ar-dev-magento {
+  &:before {
+    content: $ar-magento-dev;
+  }
+}
+.ar-dev-magisk {
+  &:before {
+    content: $ar-magisk-dev;
+  }
+}
+.ar-dev-mail-dot-ru {
+  &:before {
+    content: $ar-mail-dot-ru-dev;
+  }
+}
+.ar-dev-mailchimp {
+  &:before {
+    content: $ar-mailchimp-dev;
+  }
+}
+.ar-dev-makerbot {
+  &:before {
+    content: $ar-makerbot-dev;
+  }
+}
+.ar-dev-manjaro {
+  &:before {
+    content: $ar-manjaro-dev;
+  }
+}
+.ar-dev-markdown {
+  &:before {
+    content: $ar-markdown-dev;
+  }
+}
+.ar-dev-marketo {
+  &:before {
+    content: $ar-marketo-dev;
+  }
+}
+.ar-dev-mastercard {
+  &:before {
+    content: $ar-mastercard-dev;
+  }
+}
+.ar-dev-mastodon {
+  &:before {
+    content: $ar-mastodon-dev;
+  }
+}
+.ar-dev-materialdesign {
+  &:before {
+    content: $ar-materialdesign-dev;
+  }
+}
+.ar-dev-mathworks {
+  &:before {
+    content: $ar-mathworks-dev;
+  }
+}
+.ar-dev-matrix {
+  &:before {
+    content: $ar-matrix-dev;
+  }
+}
+.ar-dev-matternet {
+  &:before {
+    content: $ar-matternet-dev;
+  }
+}
+.ar-dev-mediafire {
+  &:before {
+    content: $ar-mediafire-dev;
+  }
+}
+.ar-dev-mediatemple {
+  &:before {
+    content: $ar-mediatemple-dev;
+  }
+}
+.ar-dev-medium {
+  &:before {
+    content: $ar-medium-dev;
+  }
+}
+.ar-dev-meetup {
+  &:before {
+    content: $ar-meetup-dev;
+  }
+}
+.ar-dev-mega {
+  &:before {
+    content: $ar-mega-dev;
+  }
+}
+.ar-dev-messenger {
+  &:before {
+    content: $ar-messenger-dev;
+  }
+}
+.ar-dev-meteor {
+  &:before {
+    content: $ar-meteor-dev;
+  }
+}
+.ar-dev-micro-dot-blog {
+  &:before {
+    content: $ar-micro-dot-blog-dev;
+  }
+}
+.ar-dev-microgenetics {
+  &:before {
+    content: $ar-microgenetics-dev;
+  }
+}
+.ar-dev-microsoft {
+  &:before {
+    content: $ar-microsoft-dev;
+  }
+}
+.ar-dev-microsoftaccess {
+  &:before {
+    content: $ar-microsoftaccess-dev;
+  }
+}
+.ar-dev-microsoftazure {
+  &:before {
+    content: $ar-microsoftazure-dev;
+  }
+}
+.ar-dev-microsoftedge {
+  &:before {
+    content: $ar-microsoftedge-dev;
+  }
+}
+.ar-dev-microsoftexcel {
+  &:before {
+    content: $ar-microsoftexcel-dev;
+  }
+}
+.ar-dev-microsoftonedrive {
+  &:before {
+    content: $ar-microsoftonedrive-dev;
+  }
+}
+.ar-dev-microsoftonenote {
+  &:before {
+    content: $ar-microsoftonenote-dev;
+  }
+}
+.ar-dev-microsoftoutlook {
+  &:before {
+    content: $ar-microsoftoutlook-dev;
+  }
+}
+.ar-dev-microsoftpowerpoint {
+  &:before {
+    content: $ar-microsoftpowerpoint-dev;
+  }
+}
+.ar-dev-microsoftword {
+  &:before {
+    content: $ar-microsoftword-dev;
+  }
+}
+.ar-dev-minutemailer {
+  &:before {
+    content: $ar-minutemailer-dev;
+  }
+}
+.ar-dev-mix {
+  &:before {
+    content: $ar-mix-dev;
+  }
+}
+.ar-dev-mixcloud {
+  &:before {
+    content: $ar-mixcloud-dev;
+  }
+}
+.ar-dev-mixer {
+  &:before {
+    content: $ar-mixer-dev;
+  }
+}
+.ar-dev-monero {
+  &:before {
+    content: $ar-monero-dev;
+  }
+}
+.ar-dev-mongodb {
+  &:before {
+    content: $ar-mongodb-dev;
+  }
+}
+.ar-dev-monkeytie {
+  &:before {
+    content: $ar-monkeytie-dev;
+  }
+}
+.ar-dev-monogram {
+  &:before {
+    content: $ar-monogram-dev;
+  }
+}
+.ar-dev-monzo {
+  &:before {
+    content: $ar-monzo-dev;
+  }
+}
+.ar-dev-moo {
+  &:before {
+    content: $ar-moo-dev;
+  }
+}
+.ar-dev-mozilla {
+  &:before {
+    content: $ar-mozilla-dev;
+  }
+}
+.ar-dev-mozillafirefox {
+  &:before {
+    content: $ar-mozillafirefox-dev;
+  }
+}
+.ar-dev-mxlinux {
+  &:before {
+    content: $ar-mxlinux-dev;
+  }
+}
+.ar-dev-myspace {
+  &:before {
+    content: $ar-myspace-dev;
+  }
+}
+.ar-dev-mysql {
+  &:before {
+    content: $ar-mysql-dev;
+  }
+}
+.ar-dev-nativescript {
+  &:before {
+    content: $ar-nativescript-dev;
+  }
+}
+.ar-dev-neo4j {
+  &:before {
+    content: $ar-neo4j-dev;
+  }
+}
+.ar-dev-netflix {
+  &:before {
+    content: $ar-netflix-dev;
+  }
+}
+.ar-dev-netlify {
+  &:before {
+    content: $ar-netlify-dev;
+  }
+}
+.ar-dev-nextcloud {
+  &:before {
+    content: $ar-nextcloud-dev;
+  }
+}
+.ar-dev-nextdoor {
+  &:before {
+    content: $ar-nextdoor-dev;
+  }
+}
+.ar-dev-nginx {
+  &:before {
+    content: $ar-nginx-dev;
+  }
+}
+.ar-dev-nintendo {
+  &:before {
+    content: $ar-nintendo-dev;
+  }
+}
+.ar-dev-nintendogamecube {
+  &:before {
+    content: $ar-nintendogamecube-dev;
+  }
+}
+.ar-dev-nintendoswitch {
+  &:before {
+    content: $ar-nintendoswitch-dev;
+  }
+}
+.ar-dev-node-dot-js {
+  &:before {
+    content: $ar-node-dot-js-dev;
+  }
+}
+.ar-dev-nodemon {
+  &:before {
+    content: $ar-nodemon-dev;
+  }
+}
+.ar-dev-npm {
+  &:before {
+    content: $ar-npm-dev;
+  }
+}
+.ar-dev-nucleo {
+  &:before {
+    content: $ar-nucleo-dev;
+  }
+}
+.ar-dev-nuget {
+  &:before {
+    content: $ar-nuget-dev;
+  }
+}
+.ar-dev-nuxt-dot-js {
+  &:before {
+    content: $ar-nuxt-dot-js-dev;
+  }
+}
+.ar-dev-nvidia {
+  &:before {
+    content: $ar-nvidia-dev;
+  }
+}
+.ar-dev-octopusdeploy {
+  &:before {
+    content: $ar-octopusdeploy-dev;
+  }
+}
+.ar-dev-oculus {
+  &:before {
+    content: $ar-oculus-dev;
+  }
+}
+.ar-dev-odnoklassniki {
+  &:before {
+    content: $ar-odnoklassniki-dev;
+  }
+}
+.ar-dev-openaccess {
+  &:before {
+    content: $ar-openaccess-dev;
+  }
+}
+.ar-dev-openstreetmap {
+  &:before {
+    content: $ar-openstreetmap-dev;
+  }
+}
+.ar-dev-opensuse {
+  &:before {
+    content: $ar-opensuse-dev;
+  }
+}
+.ar-dev-opera {
+  &:before {
+    content: $ar-opera-dev;
+  }
+}
+.ar-dev-opsgenie {
+  &:before {
+    content: $ar-opsgenie-dev;
+  }
+}
+.ar-dev-oracle {
+  &:before {
+    content: $ar-oracle-dev;
+  }
+}
+.ar-dev-origin {
+  &:before {
+    content: $ar-origin-dev;
+  }
+}
+.ar-dev-osmc {
+  &:before {
+    content: $ar-osmc-dev;
+  }
+}
+.ar-dev-overcast {
+  &:before {
+    content: $ar-overcast-dev;
+  }
+}
+.ar-dev-ovh {
+  &:before {
+    content: $ar-ovh-dev;
+  }
+}
+.ar-dev-pagekit {
+  &:before {
+    content: $ar-pagekit-dev;
+  }
+}
+.ar-dev-pandora {
+  &:before {
+    content: $ar-pandora-dev;
+  }
+}
+.ar-dev-patreon {
+  &:before {
+    content: $ar-patreon-dev;
+  }
+}
+.ar-dev-paypal {
+  &:before {
+    content: $ar-paypal-dev;
+  }
+}
+.ar-dev-periscope {
+  &:before {
+    content: $ar-periscope-dev;
+  }
+}
+.ar-dev-php {
+  &:before {
+    content: $ar-php-dev;
+  }
+}
+.ar-dev-picarto-dot-tv {
+  &:before {
+    content: $ar-picarto-dot-tv-dev;
+  }
+}
+.ar-dev-pinboard {
+  &:before {
+    content: $ar-pinboard-dev;
+  }
+}
+.ar-dev-pingdom {
+  &:before {
+    content: $ar-pingdom-dev;
+  }
+}
+.ar-dev-pingup {
+  &:before {
+    content: $ar-pingup-dev;
+  }
+}
+.ar-dev-pinterest {
+  &:before {
+    content: $ar-pinterest-dev;
+  }
+}
+.ar-dev-pivotaltracker {
+  &:before {
+    content: $ar-pivotaltracker-dev;
+  }
+}
+.ar-dev-plangrid {
+  &:before {
+    content: $ar-plangrid-dev;
+  }
+}
+.ar-dev-player-dot-me {
+  &:before {
+    content: $ar-player-dot-me-dev;
+  }
+}
+.ar-dev-playstation {
+  &:before {
+    content: $ar-playstation-dev;
+  }
+}
+.ar-dev-playstation3 {
+  &:before {
+    content: $ar-playstation3-dev;
+  }
+}
+.ar-dev-playstation4 {
+  &:before {
+    content: $ar-playstation4-dev;
+  }
+}
+.ar-dev-plex {
+  &:before {
+    content: $ar-plex-dev;
+  }
+}
+.ar-dev-pluralsight {
+  &:before {
+    content: $ar-pluralsight-dev;
+  }
+}
+.ar-dev-plurk {
+  &:before {
+    content: $ar-plurk-dev;
+  }
+}
+.ar-dev-pocket {
+  &:before {
+    content: $ar-pocket-dev;
+  }
+}
+.ar-dev-podcasts {
+  &:before {
+    content: $ar-podcasts-dev;
+  }
+}
+.ar-dev-postgresql {
+  &:before {
+    content: $ar-postgresql-dev;
+  }
+}
+.ar-dev-postman {
+  &:before {
+    content: $ar-postman-dev;
+  }
+}
+.ar-dev-powershell {
+  &:before {
+    content: $ar-powershell-dev;
+  }
+}
+.ar-dev-prismic {
+  &:before {
+    content: $ar-prismic-dev;
+  }
+}
+.ar-dev-probot {
+  &:before {
+    content: $ar-probot-dev;
+  }
+}
+.ar-dev-processwire {
+  &:before {
+    content: $ar-processwire-dev;
+  }
+}
+.ar-dev-producthunt {
+  &:before {
+    content: $ar-producthunt-dev;
+  }
+}
+.ar-dev-proto-dot-io {
+  &:before {
+    content: $ar-proto-dot-io-dev;
+  }
+}
+.ar-dev-protonmail {
+  &:before {
+    content: $ar-protonmail-dev;
+  }
+}
+.ar-dev-proxmox {
+  &:before {
+    content: $ar-proxmox-dev;
+  }
+}
+.ar-dev-pypi {
+  &:before {
+    content: $ar-pypi-dev;
+  }
+}
+.ar-dev-python {
+  &:before {
+    content: $ar-python-dev;
+  }
+}
+.ar-dev-qiita {
+  &:before {
+    content: $ar-qiita-dev;
+  }
+}
+.ar-dev-qualcomm {
+  &:before {
+    content: $ar-qualcomm-dev;
+  }
+}
+.ar-dev-quantcast {
+  &:before {
+    content: $ar-quantcast-dev;
+  }
+}
+.ar-dev-quantopian {
+  &:before {
+    content: $ar-quantopian-dev;
+  }
+}
+.ar-dev-quora {
+  &:before {
+    content: $ar-quora-dev;
+  }
+}
+.ar-dev-qwiklabs {
+  &:before {
+    content: $ar-qwiklabs-dev;
+  }
+}
+.ar-dev-qzone {
+  &:before {
+    content: $ar-qzone-dev;
+  }
+}
+.ar-dev-r {
+  &:before {
+    content: $ar-r-dev;
+  }
+}
+.ar-dev-rails {
+  &:before {
+    content: $ar-rails-dev;
+  }
+}
+.ar-dev-raspberrypi {
+  &:before {
+    content: $ar-raspberrypi-dev;
+  }
+}
+.ar-dev-react {
+  &:before {
+    content: $ar-react-dev;
+  }
+}
+.ar-dev-readthedocs {
+  &:before {
+    content: $ar-readthedocs-dev;
+  }
+}
+.ar-dev-reason {
+  &:before {
+    content: $ar-reason-dev;
+  }
+}
+.ar-dev-redbubble {
+  &:before {
+    content: $ar-redbubble-dev;
+  }
+}
+.ar-dev-reddit {
+  &:before {
+    content: $ar-reddit-dev;
+  }
+}
+.ar-dev-redhat {
+  &:before {
+    content: $ar-redhat-dev;
+  }
+}
+.ar-dev-redis {
+  &:before {
+    content: $ar-redis-dev;
+  }
+}
+.ar-dev-redux {
+  &:before {
+    content: $ar-redux-dev;
+  }
+}
+.ar-dev-renren {
+  &:before {
+    content: $ar-renren-dev;
+  }
+}
+.ar-dev-reverbnation {
+  &:before {
+    content: $ar-reverbnation-dev;
+  }
+}
+.ar-dev-riot {
+  &:before {
+    content: $ar-riot-dev;
+  }
+}
+.ar-dev-riseup {
+  &:before {
+    content: $ar-riseup-dev;
+  }
+}
+.ar-dev-rollup-dot-js {
+  &:before {
+    content: $ar-rollup-dot-js-dev;
+  }
+}
+.ar-dev-roots {
+  &:before {
+    content: $ar-roots-dev;
+  }
+}
+.ar-dev-rss {
+  &:before {
+    content: $ar-rss-dev;
+  }
+}
+.ar-dev-ruby {
+  &:before {
+    content: $ar-ruby-dev;
+  }
+}
+.ar-dev-rubygems {
+  &:before {
+    content: $ar-rubygems-dev;
+  }
+}
+.ar-dev-runkeeper {
+  &:before {
+    content: $ar-runkeeper-dev;
+  }
+}
+.ar-dev-rust {
+  &:before {
+    content: $ar-rust-dev;
+  }
+}
+.ar-dev-safari {
+  &:before {
+    content: $ar-safari-dev;
+  }
+}
+.ar-dev-salesforce {
+  &:before {
+    content: $ar-salesforce-dev;
+  }
+}
+.ar-dev-samsung {
+  &:before {
+    content: $ar-samsung-dev;
+  }
+}
+.ar-dev-samsungpay {
+  &:before {
+    content: $ar-samsungpay-dev;
+  }
+}
+.ar-dev-sap {
+  &:before {
+    content: $ar-sap-dev;
+  }
+}
+.ar-dev-sass {
+  &:before {
+    content: $ar-sass-dev;
+  }
+}
+.ar-dev-saucelabs {
+  &:before {
+    content: $ar-saucelabs-dev;
+  }
+}
+.ar-dev-scala {
+  &:before {
+    content: $ar-scala-dev;
+  }
+}
+.ar-dev-scaleway {
+  &:before {
+    content: $ar-scaleway-dev;
+  }
+}
+.ar-dev-scribd {
+  &:before {
+    content: $ar-scribd-dev;
+  }
+}
+.ar-dev-scrutinizerci {
+  &:before {
+    content: $ar-scrutinizerci-dev;
+  }
+}
+.ar-dev-sega {
+  &:before {
+    content: $ar-sega-dev;
+  }
+}
+.ar-dev-sellfy {
+  &:before {
+    content: $ar-sellfy-dev;
+  }
+}
+.ar-dev-sensu {
+  &:before {
+    content: $ar-sensu-dev;
+  }
+}
+.ar-dev-sentry {
+  &:before {
+    content: $ar-sentry-dev;
+  }
+}
+.ar-dev-serverfault {
+  &:before {
+    content: $ar-serverfault-dev;
+  }
+}
+.ar-dev-shazam {
+  &:before {
+    content: $ar-shazam-dev;
+  }
+}
+.ar-dev-shopify {
+  &:before {
+    content: $ar-shopify-dev;
+  }
+}
+.ar-dev-signal {
+  &:before {
+    content: $ar-signal-dev;
+  }
+}
+.ar-dev-simpleicons {
+  &:before {
+    content: $ar-simpleicons-dev;
+  }
+}
+.ar-dev-sinaweibo {
+  &:before {
+    content: $ar-sinaweibo-dev;
+  }
+}
+.ar-dev-sitepoint {
+  &:before {
+    content: $ar-sitepoint-dev;
+  }
+}
+.ar-dev-skyliner {
+  &:before {
+    content: $ar-skyliner-dev;
+  }
+}
+.ar-dev-skype {
+  &:before {
+    content: $ar-skype-dev;
+  }
+}
+.ar-dev-slack {
+  &:before {
+    content: $ar-slack-dev;
+  }
+}
+.ar-dev-slashdot {
+  &:before {
+    content: $ar-slashdot-dev;
+  }
+}
+.ar-dev-slickpic {
+  &:before {
+    content: $ar-slickpic-dev;
+  }
+}
+.ar-dev-slides {
+  &:before {
+    content: $ar-slides-dev;
+  }
+}
+.ar-dev-smashingmagazine {
+  &:before {
+    content: $ar-smashingmagazine-dev;
+  }
+}
+.ar-dev-snapchat {
+  &:before {
+    content: $ar-snapchat-dev;
+  }
+}
+.ar-dev-snapcraft {
+  &:before {
+    content: $ar-snapcraft-dev;
+  }
+}
+.ar-dev-snyk {
+  &:before {
+    content: $ar-snyk-dev;
+  }
+}
+.ar-dev-society6 {
+  &:before {
+    content: $ar-society6-dev;
+  }
+}
+.ar-dev-sogou {
+  &:before {
+    content: $ar-sogou-dev;
+  }
+}
+.ar-dev-songkick {
+  &:before {
+    content: $ar-songkick-dev;
+  }
+}
+.ar-dev-soundcloud {
+  &:before {
+    content: $ar-soundcloud-dev;
+  }
+}
+.ar-dev-sourceforge {
+  &:before {
+    content: $ar-sourceforge-dev;
+  }
+}
+.ar-dev-sourcegraph {
+  &:before {
+    content: $ar-sourcegraph-dev;
+  }
+}
+.ar-dev-spacemacs {
+  &:before {
+    content: $ar-spacemacs-dev;
+  }
+}
+.ar-dev-sparkfun {
+  &:before {
+    content: $ar-sparkfun-dev;
+  }
+}
+.ar-dev-sparkpost {
+  &:before {
+    content: $ar-sparkpost-dev;
+  }
+}
+.ar-dev-spdx {
+  &:before {
+    content: $ar-spdx-dev;
+  }
+}
+.ar-dev-speakerdeck {
+  &:before {
+    content: $ar-speakerdeck-dev;
+  }
+}
+.ar-dev-spotify {
+  &:before {
+    content: $ar-spotify-dev;
+  }
+}
+.ar-dev-spotlight {
+  &:before {
+    content: $ar-spotlight-dev;
+  }
+}
+.ar-dev-spreaker {
+  &:before {
+    content: $ar-spreaker-dev;
+  }
+}
+.ar-dev-sprint {
+  &:before {
+    content: $ar-sprint-dev;
+  }
+}
+.ar-dev-squarespace {
+  &:before {
+    content: $ar-squarespace-dev;
+  }
+}
+.ar-dev-stackexchange {
+  &:before {
+    content: $ar-stackexchange-dev;
+  }
+}
+.ar-dev-stackoverflow {
+  &:before {
+    content: $ar-stackoverflow-dev;
+  }
+}
+.ar-dev-stackshare {
+  &:before {
+    content: $ar-stackshare-dev;
+  }
+}
+.ar-dev-stadia {
+  &:before {
+    content: $ar-stadia-dev;
+  }
+}
+.ar-dev-statamic {
+  &:before {
+    content: $ar-statamic-dev;
+  }
+}
+.ar-dev-staticman {
+  &:before {
+    content: $ar-staticman-dev;
+  }
+}
+.ar-dev-statuspage {
+  &:before {
+    content: $ar-statuspage-dev;
+  }
+}
+.ar-dev-steam {
+  &:before {
+    content: $ar-steam-dev;
+  }
+}
+.ar-dev-steem {
+  &:before {
+    content: $ar-steem-dev;
+  }
+}
+.ar-dev-steemit {
+  &:before {
+    content: $ar-steemit-dev;
+  }
+}
+.ar-dev-stitcher {
+  &:before {
+    content: $ar-stitcher-dev;
+  }
+}
+.ar-dev-storify {
+  &:before {
+    content: $ar-storify-dev;
+  }
+}
+.ar-dev-strava {
+  &:before {
+    content: $ar-strava-dev;
+  }
+}
+.ar-dev-stripe {
+  &:before {
+    content: $ar-stripe-dev;
+  }
+}
+.ar-dev-stubhub {
+  &:before {
+    content: $ar-stubhub-dev;
+  }
+}
+.ar-dev-styleshare {
+  &:before {
+    content: $ar-styleshare-dev;
+  }
+}
+.ar-dev-stylus {
+  &:before {
+    content: $ar-stylus-dev;
+  }
+}
+.ar-dev-sublimetext {
+  &:before {
+    content: $ar-sublimetext-dev;
+  }
+}
+.ar-dev-subversion {
+  &:before {
+    content: $ar-subversion-dev;
+  }
+}
+.ar-dev-superuser {
+  &:before {
+    content: $ar-superuser-dev;
+  }
+}
+.ar-dev-swarm {
+  &:before {
+    content: $ar-swarm-dev;
+  }
+}
+.ar-dev-swift {
+  &:before {
+    content: $ar-swift-dev;
+  }
+}
+.ar-dev-symfony {
+  &:before {
+    content: $ar-symfony-dev;
+  }
+}
+.ar-dev-t-mobile {
+  &:before {
+    content: $ar-t-mobile-dev;
+  }
+}
+.ar-dev-tails {
+  &:before {
+    content: $ar-tails-dev;
+  }
+}
+.ar-dev-tapas {
+  &:before {
+    content: $ar-tapas-dev;
+  }
+}
+.ar-dev-ted {
+  &:before {
+    content: $ar-ted-dev;
+  }
+}
+.ar-dev-teespring {
+  &:before {
+    content: $ar-teespring-dev;
+  }
+}
+.ar-dev-telegram {
+  &:before {
+    content: $ar-telegram-dev;
+  }
+}
+.ar-dev-tencentqq {
+  &:before {
+    content: $ar-tencentqq-dev;
+  }
+}
+.ar-dev-tencentweibo {
+  &:before {
+    content: $ar-tencentweibo-dev;
+  }
+}
+.ar-dev-tesla {
+  &:before {
+    content: $ar-tesla-dev;
+  }
+}
+.ar-dev-themighty {
+  &:before {
+    content: $ar-themighty-dev;
+  }
+}
+.ar-dev-themoviedatabase {
+  &:before {
+    content: $ar-themoviedatabase-dev;
+  }
+}
+.ar-dev-tidal {
+  &:before {
+    content: $ar-tidal-dev;
+  }
+}
+.ar-dev-tinder {
+  &:before {
+    content: $ar-tinder-dev;
+  }
+}
+.ar-dev-todoist {
+  &:before {
+    content: $ar-todoist-dev;
+  }
+}
+.ar-dev-toggl {
+  &:before {
+    content: $ar-toggl-dev;
+  }
+}
+.ar-dev-topcoder {
+  &:before {
+    content: $ar-topcoder-dev;
+  }
+}
+.ar-dev-toptal {
+  &:before {
+    content: $ar-toptal-dev;
+  }
+}
+.ar-dev-tor {
+  &:before {
+    content: $ar-tor-dev;
+  }
+}
+.ar-dev-trainerroad {
+  &:before {
+    content: $ar-trainerroad-dev;
+  }
+}
+.ar-dev-trakt {
+  &:before {
+    content: $ar-trakt-dev;
+  }
+}
+.ar-dev-travisci {
+  &:before {
+    content: $ar-travisci-dev;
+  }
+}
+.ar-dev-treehouse {
+  &:before {
+    content: $ar-treehouse-dev;
+  }
+}
+.ar-dev-trello {
+  &:before {
+    content: $ar-trello-dev;
+  }
+}
+.ar-dev-tripadvisor {
+  &:before {
+    content: $ar-tripadvisor-dev;
+  }
+}
+.ar-dev-trulia {
+  &:before {
+    content: $ar-trulia-dev;
+  }
+}
+.ar-dev-tumblr {
+  &:before {
+    content: $ar-tumblr-dev;
+  }
+}
+.ar-dev-twilio {
+  &:before {
+    content: $ar-twilio-dev;
+  }
+}
+.ar-dev-twitch {
+  &:before {
+    content: $ar-twitch-dev;
+  }
+}
+.ar-dev-twitter {
+  &:before {
+    content: $ar-twitter-dev;
+  }
+}
+.ar-dev-twoo {
+  &:before {
+    content: $ar-twoo-dev;
+  }
+}
+.ar-dev-typescript {
+  &:before {
+    content: $ar-typescript-dev;
+  }
+}
+.ar-dev-typo3 {
+  &:before {
+    content: $ar-typo3-dev;
+  }
+}
+.ar-dev-uber {
+  &:before {
+    content: $ar-uber-dev;
+  }
+}
+.ar-dev-ubisoft {
+  &:before {
+    content: $ar-ubisoft-dev;
+  }
+}
+.ar-dev-ubuntu {
+  &:before {
+    content: $ar-ubuntu-dev;
+  }
+}
+.ar-dev-udacity {
+  &:before {
+    content: $ar-udacity-dev;
+  }
+}
+.ar-dev-udemy {
+  &:before {
+    content: $ar-udemy-dev;
+  }
+}
+.ar-dev-uikit {
+  &:before {
+    content: $ar-uikit-dev;
+  }
+}
+.ar-dev-umbraco {
+  &:before {
+    content: $ar-umbraco-dev;
+  }
+}
+.ar-dev-unity {
+  &:before {
+    content: $ar-unity-dev;
+  }
+}
+.ar-dev-unsplash {
+  &:before {
+    content: $ar-unsplash-dev;
+  }
+}
+.ar-dev-untappd {
+  &:before {
+    content: $ar-untappd-dev;
+  }
+}
+.ar-dev-upwork {
+  &:before {
+    content: $ar-upwork-dev;
+  }
+}
+.ar-dev-v8 {
+  &:before {
+    content: $ar-v8-dev;
+  }
+}
+.ar-dev-vagrant {
+  &:before {
+    content: $ar-vagrant-dev;
+  }
+}
+.ar-dev-venmo {
+  &:before {
+    content: $ar-venmo-dev;
+  }
+}
+.ar-dev-verizon {
+  &:before {
+    content: $ar-verizon-dev;
+  }
+}
+.ar-dev-viadeo {
+  &:before {
+    content: $ar-viadeo-dev;
+  }
+}
+.ar-dev-viber {
+  &:before {
+    content: $ar-viber-dev;
+  }
+}
+.ar-dev-vim {
+  &:before {
+    content: $ar-vim-dev;
+  }
+}
+.ar-dev-vimeo {
+  &:before {
+    content: $ar-vimeo-dev;
+  }
+}
+.ar-dev-vine {
+  &:before {
+    content: $ar-vine-dev;
+  }
+}
+.ar-dev-virb {
+  &:before {
+    content: $ar-virb-dev;
+  }
+}
+.ar-dev-visa {
+  &:before {
+    content: $ar-visa-dev;
+  }
+}
+.ar-dev-visualstudiocode {
+  &:before {
+    content: $ar-visualstudiocode-dev;
+  }
+}
+.ar-dev-vk {
+  &:before {
+    content: $ar-vk-dev;
+  }
+}
+.ar-dev-vlcmediaplayer {
+  &:before {
+    content: $ar-vlcmediaplayer-dev;
+  }
+}
+.ar-dev-vsco {
+  &:before {
+    content: $ar-vsco-dev;
+  }
+}
+.ar-dev-vue-dot-js {
+  &:before {
+    content: $ar-vue-dot-js-dev;
+  }
+}
+.ar-dev-wattpad {
+  &:before {
+    content: $ar-wattpad-dev;
+  }
+}
+.ar-dev-weasyl {
+  &:before {
+    content: $ar-weasyl-dev;
+  }
+}
+.ar-dev-webcomponents-dot-org {
+  &:before {
+    content: $ar-webcomponents-dot-org-dev;
+  }
+}
+.ar-dev-webpack {
+  &:before {
+    content: $ar-webpack-dev;
+  }
+}
+.ar-dev-webstorm {
+  &:before {
+    content: $ar-webstorm-dev;
+  }
+}
+.ar-dev-wechat {
+  &:before {
+    content: $ar-wechat-dev;
+  }
+}
+.ar-dev-whatsapp {
+  &:before {
+    content: $ar-whatsapp-dev;
+  }
+}
+.ar-dev-wheniwork {
+  &:before {
+    content: $ar-wheniwork-dev;
+  }
+}
+.ar-dev-wii {
+  &:before {
+    content: $ar-wii-dev;
+  }
+}
+.ar-dev-wiiu {
+  &:before {
+    content: $ar-wiiu-dev;
+  }
+}
+.ar-dev-wikipedia {
+  &:before {
+    content: $ar-wikipedia-dev;
+  }
+}
+.ar-dev-windows {
+  &:before {
+    content: $ar-windows-dev;
+  }
+}
+.ar-dev-wire {
+  &:before {
+    content: $ar-wire-dev;
+  }
+}
+.ar-dev-wix {
+  &:before {
+    content: $ar-wix-dev;
+  }
+}
+.ar-dev-wolfram {
+  &:before {
+    content: $ar-wolfram-dev;
+  }
+}
+.ar-dev-wolframlanguage {
+  &:before {
+    content: $ar-wolframlanguage-dev;
+  }
+}
+.ar-dev-wolframmathematica {
+  &:before {
+    content: $ar-wolframmathematica-dev;
+  }
+}
+.ar-dev-wordpress {
+  &:before {
+    content: $ar-wordpress-dev;
+  }
+}
+.ar-dev-wpengine {
+  &:before {
+    content: $ar-wpengine-dev;
+  }
+}
+.ar-dev-x-pack {
+  &:before {
+    content: $ar-x-pack-dev;
+  }
+}
+.ar-dev-xbox {
+  &:before {
+    content: $ar-xbox-dev;
+  }
+}
+.ar-dev-xcode {
+  &:before {
+    content: $ar-xcode-dev;
+  }
+}
+.ar-dev-xero {
+  &:before {
+    content: $ar-xero-dev;
+  }
+}
+.ar-dev-xing {
+  &:before {
+    content: $ar-xing-dev;
+  }
+}
+.ar-dev-xsplit {
+  &:before {
+    content: $ar-xsplit-dev;
+  }
+}
+.ar-dev-yahoo {
+  &:before {
+    content: $ar-yahoo-dev;
+  }
+}
+.ar-dev-yammer {
+  &:before {
+    content: $ar-yammer-dev;
+  }
+}
+.ar-dev-yandex {
+  &:before {
+    content: $ar-yandex-dev;
+  }
+}
+.ar-dev-yarn {
+  &:before {
+    content: $ar-yarn-dev;
+  }
+}
+.ar-dev-ycombinator {
+  &:before {
+    content: $ar-ycombinator-dev;
+  }
+}
+.ar-dev-yelp {
+  &:before {
+    content: $ar-yelp-dev;
+  }
+}
+.ar-dev-youtube {
+  &:before {
+    content: $ar-youtube-dev;
+  }
+}
+.ar-dev-zapier {
+  &:before {
+    content: $ar-zapier-dev;
+  }
+}
+.ar-dev-zeit {
+  &:before {
+    content: $ar-zeit-dev;
+  }
+}
+.ar-dev-zendesk {
+  &:before {
+    content: $ar-zendesk-dev;
+  }
+}
+.ar-dev-zerply {
+  &:before {
+    content: $ar-zerply-dev;
+  }
+}
+.ar-dev-zillow {
+  &:before {
+    content: $ar-zillow-dev;
+  }
+}
+.ar-dev-zorin {
+  &:before {
+    content: $ar-zorin-dev;
+  }
+}
+

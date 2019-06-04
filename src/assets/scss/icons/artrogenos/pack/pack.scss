@@ -1,0 +1,1929 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$artrogenos-pack-font-family}';
+  src:  url('#{$artrogenos-pack-font-path}/#{$artrogenos-pack-font-family}.eot?hvw90f');
+  src:  url('#{$artrogenos-pack-font-path}/#{$artrogenos-pack-font-family}.eot?hvw90f#iefix') format('embedded-opentype'),
+    url('#{$artrogenos-pack-font-path}/#{$artrogenos-pack-font-family}.ttf?hvw90f') format('truetype'),
+    url('#{$artrogenos-pack-font-path}/#{$artrogenos-pack-font-family}.woff?hvw90f') format('woff'),
+    url('#{$artrogenos-pack-font-path}/#{$artrogenos-pack-font-family}.svg?hvw90f##{$artrogenos-pack-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ar-pack-"], [class*=" ar-pack-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$artrogenos-pack-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ar-pack-add-1 {
+  &:before {
+    content: $ar-add-1-pack;
+  }
+}
+.ar-pack-add-2 {
+  &:before {
+    content: $ar-add-2-pack;
+  }
+}
+.ar-pack-add-3 {
+  &:before {
+    content: $ar-add-3-pack;
+  }
+}
+.ar-pack-add {
+  &:before {
+    content: $ar-add-pack;
+  }
+}
+.ar-pack-agenda {
+  &:before {
+    content: $ar-agenda-pack;
+  }
+}
+.ar-pack-alarm-1 {
+  &:before {
+    content: $ar-alarm-1-pack;
+  }
+}
+.ar-pack-alarm-clock-1 {
+  &:before {
+    content: $ar-alarm-clock-1-pack;
+  }
+}
+.ar-pack-alarm-clock {
+  &:before {
+    content: $ar-alarm-clock-pack;
+  }
+}
+.ar-pack-alarm {
+  &:before {
+    content: $ar-alarm-pack;
+  }
+}
+.ar-pack-albums {
+  &:before {
+    content: $ar-albums-pack;
+  }
+}
+.ar-pack-app {
+  &:before {
+    content: $ar-app-pack;
+  }
+}
+.ar-pack-archive-1 {
+  &:before {
+    content: $ar-archive-1-pack;
+  }
+}
+.ar-pack-archive-2 {
+  &:before {
+    content: $ar-archive-2-pack;
+  }
+}
+.ar-pack-archive-3 {
+  &:before {
+    content: $ar-archive-3-pack;
+  }
+}
+.ar-pack-archive {
+  &:before {
+    content: $ar-archive-pack;
+  }
+}
+.ar-pack-attachment {
+  &:before {
+    content: $ar-attachment-pack;
+  }
+}
+.ar-pack-back {
+  &:before {
+    content: $ar-back-pack;
+  }
+}
+.ar-pack-battery-1 {
+  &:before {
+    content: $ar-battery-1-pack;
+  }
+}
+.ar-pack-battery-2 {
+  &:before {
+    content: $ar-battery-2-pack;
+  }
+}
+.ar-pack-battery-3 {
+  &:before {
+    content: $ar-battery-3-pack;
+  }
+}
+.ar-pack-battery-4 {
+  &:before {
+    content: $ar-battery-4-pack;
+  }
+}
+.ar-pack-battery-5 {
+  &:before {
+    content: $ar-battery-5-pack;
+  }
+}
+.ar-pack-battery-6 {
+  &:before {
+    content: $ar-battery-6-pack;
+  }
+}
+.ar-pack-battery-7 {
+  &:before {
+    content: $ar-battery-7-pack;
+  }
+}
+.ar-pack-battery-8 {
+  &:before {
+    content: $ar-battery-8-pack;
+  }
+}
+.ar-pack-battery-9 {
+  &:before {
+    content: $ar-battery-9-pack;
+  }
+}
+.ar-pack-battery {
+  &:before {
+    content: $ar-battery-pack;
+  }
+}
+.ar-pack-binoculars {
+  &:before {
+    content: $ar-binoculars-pack;
+  }
+}
+.ar-pack-blueprint {
+  &:before {
+    content: $ar-blueprint-pack;
+  }
+}
+.ar-pack-bluetooth-1 {
+  &:before {
+    content: $ar-bluetooth-1-pack;
+  }
+}
+.ar-pack-bluetooth {
+  &:before {
+    content: $ar-bluetooth-pack;
+  }
+}
+.ar-pack-bookmark-1 {
+  &:before {
+    content: $ar-bookmark-1-pack;
+  }
+}
+.ar-pack-bookmark {
+  &:before {
+    content: $ar-bookmark-pack;
+  }
+}
+.ar-pack-briefcase {
+  &:before {
+    content: $ar-briefcase-pack;
+  }
+}
+.ar-pack-broken-link {
+  &:before {
+    content: $ar-broken-link-pack;
+  }
+}
+.ar-pack-calculator-1 {
+  &:before {
+    content: $ar-calculator-1-pack;
+  }
+}
+.ar-pack-calculator {
+  &:before {
+    content: $ar-calculator-pack;
+  }
+}
+.ar-pack-calendar-1 {
+  &:before {
+    content: $ar-calendar-1-pack;
+  }
+}
+.ar-pack-calendar-2 {
+  &:before {
+    content: $ar-calendar-2-pack;
+  }
+}
+.ar-pack-calendar-3 {
+  &:before {
+    content: $ar-calendar-3-pack;
+  }
+}
+.ar-pack-calendar-4 {
+  &:before {
+    content: $ar-calendar-4-pack;
+  }
+}
+.ar-pack-calendar-5 {
+  &:before {
+    content: $ar-calendar-5-pack;
+  }
+}
+.ar-pack-calendar-6 {
+  &:before {
+    content: $ar-calendar-6-pack;
+  }
+}
+.ar-pack-calendar-7 {
+  &:before {
+    content: $ar-calendar-7-pack;
+  }
+}
+.ar-pack-calendar {
+  &:before {
+    content: $ar-calendar-pack;
+  }
+}
+.ar-pack-checked-1 {
+  &:before {
+    content: $ar-checked-1-pack;
+  }
+}
+.ar-pack-checked {
+  &:before {
+    content: $ar-checked-pack;
+  }
+}
+.ar-pack-clock-1 {
+  &:before {
+    content: $ar-clock-1-pack;
+  }
+}
+.ar-pack-clock {
+  &:before {
+    content: $ar-clock-pack;
+  }
+}
+.ar-pack-close {
+  &:before {
+    content: $ar-close-pack;
+  }
+}
+.ar-pack-cloud-computing-1 {
+  &:before {
+    content: $ar-cloud-computing-1-pack;
+  }
+}
+.ar-pack-cloud-computing-2 {
+  &:before {
+    content: $ar-cloud-computing-2-pack;
+  }
+}
+.ar-pack-cloud-computing-3 {
+  &:before {
+    content: $ar-cloud-computing-3-pack;
+  }
+}
+.ar-pack-cloud-computing-4 {
+  &:before {
+    content: $ar-cloud-computing-4-pack;
+  }
+}
+.ar-pack-cloud-computing-5 {
+  &:before {
+    content: $ar-cloud-computing-5-pack;
+  }
+}
+.ar-pack-cloud-computing {
+  &:before {
+    content: $ar-cloud-computing-pack;
+  }
+}
+.ar-pack-cloud {
+  &:before {
+    content: $ar-cloud-pack;
+  }
+}
+.ar-pack-command {
+  &:before {
+    content: $ar-command-pack;
+  }
+}
+.ar-pack-compact-disc-1 {
+  &:before {
+    content: $ar-compact-disc-1-pack;
+  }
+}
+.ar-pack-compact-disc-2 {
+  &:before {
+    content: $ar-compact-disc-2-pack;
+  }
+}
+.ar-pack-compact-disc {
+  &:before {
+    content: $ar-compact-disc-pack;
+  }
+}
+.ar-pack-compass {
+  &:before {
+    content: $ar-compass-pack;
+  }
+}
+.ar-pack-compose {
+  &:before {
+    content: $ar-compose-pack;
+  }
+}
+.ar-pack-controls-1 {
+  &:before {
+    content: $ar-controls-1-pack;
+  }
+}
+.ar-pack-controls-2 {
+  &:before {
+    content: $ar-controls-2-pack;
+  }
+}
+.ar-pack-controls-3 {
+  &:before {
+    content: $ar-controls-3-pack;
+  }
+}
+.ar-pack-controls-4 {
+  &:before {
+    content: $ar-controls-4-pack;
+  }
+}
+.ar-pack-controls-5 {
+  &:before {
+    content: $ar-controls-5-pack;
+  }
+}
+.ar-pack-controls-6 {
+  &:before {
+    content: $ar-controls-6-pack;
+  }
+}
+.ar-pack-controls-7 {
+  &:before {
+    content: $ar-controls-7-pack;
+  }
+}
+.ar-pack-controls-8 {
+  &:before {
+    content: $ar-controls-8-pack;
+  }
+}
+.ar-pack-controls-9 {
+  &:before {
+    content: $ar-controls-9-pack;
+  }
+}
+.ar-pack-controls {
+  &:before {
+    content: $ar-controls-pack;
+  }
+}
+.ar-pack-database-1 {
+  &:before {
+    content: $ar-database-1-pack;
+  }
+}
+.ar-pack-database-2 {
+  &:before {
+    content: $ar-database-2-pack;
+  }
+}
+.ar-pack-database-3 {
+  &:before {
+    content: $ar-database-3-pack;
+  }
+}
+.ar-pack-database {
+  &:before {
+    content: $ar-database-pack;
+  }
+}
+.ar-pack-diamond {
+  &:before {
+    content: $ar-diamond-pack;
+  }
+}
+.ar-pack-diploma {
+  &:before {
+    content: $ar-diploma-pack;
+  }
+}
+.ar-pack-dislike-1 {
+  &:before {
+    content: $ar-dislike-1-pack;
+  }
+}
+.ar-pack-dislike {
+  &:before {
+    content: $ar-dislike-pack;
+  }
+}
+.ar-pack-divide-1 {
+  &:before {
+    content: $ar-divide-1-pack;
+  }
+}
+.ar-pack-divide {
+  &:before {
+    content: $ar-divide-pack;
+  }
+}
+.ar-pack-division {
+  &:before {
+    content: $ar-division-pack;
+  }
+}
+.ar-pack-document {
+  &:before {
+    content: $ar-document-pack;
+  }
+}
+.ar-pack-download {
+  &:before {
+    content: $ar-download-pack;
+  }
+}
+.ar-pack-edit-1 {
+  &:before {
+    content: $ar-edit-1-pack;
+  }
+}
+.ar-pack-edit {
+  &:before {
+    content: $ar-edit-pack;
+  }
+}
+.ar-pack-eject-1 {
+  &:before {
+    content: $ar-eject-1-pack;
+  }
+}
+.ar-pack-eject {
+  &:before {
+    content: $ar-eject-pack;
+  }
+}
+.ar-pack-equal-1 {
+  &:before {
+    content: $ar-equal-1-pack;
+  }
+}
+.ar-pack-equal-2 {
+  &:before {
+    content: $ar-equal-2-pack;
+  }
+}
+.ar-pack-equal {
+  &:before {
+    content: $ar-equal-pack;
+  }
+}
+.ar-pack-error {
+  &:before {
+    content: $ar-error-pack;
+  }
+}
+.ar-pack-exit-1 {
+  &:before {
+    content: $ar-exit-1-pack;
+  }
+}
+.ar-pack-exit-2 {
+  &:before {
+    content: $ar-exit-2-pack;
+  }
+}
+.ar-pack-exit {
+  &:before {
+    content: $ar-exit-pack;
+  }
+}
+.ar-pack-eyeglasses {
+  &:before {
+    content: $ar-eyeglasses-pack;
+  }
+}
+.ar-pack-fast-forward-1 {
+  &:before {
+    content: $ar-fast-forward-1-pack;
+  }
+}
+.ar-pack-fast-forward {
+  &:before {
+    content: $ar-fast-forward-pack;
+  }
+}
+.ar-pack-fax {
+  &:before {
+    content: $ar-fax-pack;
+  }
+}
+.ar-pack-file-1 {
+  &:before {
+    content: $ar-file-1-pack;
+  }
+}
+.ar-pack-file-2 {
+  &:before {
+    content: $ar-file-2-pack;
+  }
+}
+.ar-pack-file {
+  &:before {
+    content: $ar-file-pack;
+  }
+}
+.ar-pack-film {
+  &:before {
+    content: $ar-film-pack;
+  }
+}
+.ar-pack-fingerprint {
+  &:before {
+    content: $ar-fingerprint-pack;
+  }
+}
+.ar-pack-flag-1 {
+  &:before {
+    content: $ar-flag-1-pack;
+  }
+}
+.ar-pack-flag-2 {
+  &:before {
+    content: $ar-flag-2-pack;
+  }
+}
+.ar-pack-flag-3 {
+  &:before {
+    content: $ar-flag-3-pack;
+  }
+}
+.ar-pack-flag-4 {
+  &:before {
+    content: $ar-flag-4-pack;
+  }
+}
+.ar-pack-flag {
+  &:before {
+    content: $ar-flag-pack;
+  }
+}
+.ar-pack-focus {
+  &:before {
+    content: $ar-focus-pack;
+  }
+}
+.ar-pack-folder-1 {
+  &:before {
+    content: $ar-folder-1-pack;
+  }
+}
+.ar-pack-folder-2 {
+  &:before {
+    content: $ar-folder-2-pack;
+  }
+}
+.ar-pack-folder-3 {
+  &:before {
+    content: $ar-folder-3-pack;
+  }
+}
+.ar-pack-folder-4 {
+  &:before {
+    content: $ar-folder-4-pack;
+  }
+}
+.ar-pack-folder-5 {
+  &:before {
+    content: $ar-folder-5-pack;
+  }
+}
+.ar-pack-folder-6 {
+  &:before {
+    content: $ar-folder-6-pack;
+  }
+}
+.ar-pack-folder-7 {
+  &:before {
+    content: $ar-folder-7-pack;
+  }
+}
+.ar-pack-folder-8 {
+  &:before {
+    content: $ar-folder-8-pack;
+  }
+}
+.ar-pack-folder-9 {
+  &:before {
+    content: $ar-folder-9-pack;
+  }
+}
+.ar-pack-folder-10 {
+  &:before {
+    content: $ar-folder-10-pack;
+  }
+}
+.ar-pack-folder-11 {
+  &:before {
+    content: $ar-folder-11-pack;
+  }
+}
+.ar-pack-folder-12 {
+  &:before {
+    content: $ar-folder-12-pack;
+  }
+}
+.ar-pack-folder-13 {
+  &:before {
+    content: $ar-folder-13-pack;
+  }
+}
+.ar-pack-folder-14 {
+  &:before {
+    content: $ar-folder-14-pack;
+  }
+}
+.ar-pack-folder-15 {
+  &:before {
+    content: $ar-folder-15-pack;
+  }
+}
+.ar-pack-folder-16 {
+  &:before {
+    content: $ar-folder-16-pack;
+  }
+}
+.ar-pack-folder-17 {
+  &:before {
+    content: $ar-folder-17-pack;
+  }
+}
+.ar-pack-folder-18 {
+  &:before {
+    content: $ar-folder-18-pack;
+  }
+}
+.ar-pack-folder-19 {
+  &:before {
+    content: $ar-folder-19-pack;
+  }
+}
+.ar-pack-folder {
+  &:before {
+    content: $ar-folder-pack;
+  }
+}
+.ar-pack-forbidden {
+  &:before {
+    content: $ar-forbidden-pack;
+  }
+}
+.ar-pack-funnel {
+  &:before {
+    content: $ar-funnel-pack;
+  }
+}
+.ar-pack-garbage-1 {
+  &:before {
+    content: $ar-garbage-1-pack;
+  }
+}
+.ar-pack-garbage-2 {
+  &:before {
+    content: $ar-garbage-2-pack;
+  }
+}
+.ar-pack-garbage {
+  &:before {
+    content: $ar-garbage-pack;
+  }
+}
+.ar-pack-gift {
+  &:before {
+    content: $ar-gift-pack;
+  }
+}
+.ar-pack-help {
+  &:before {
+    content: $ar-help-pack;
+  }
+}
+.ar-pack-hide {
+  &:before {
+    content: $ar-hide-pack;
+  }
+}
+.ar-pack-hold {
+  &:before {
+    content: $ar-hold-pack;
+  }
+}
+.ar-pack-home-1 {
+  &:before {
+    content: $ar-home-1-pack;
+  }
+}
+.ar-pack-home-2 {
+  &:before {
+    content: $ar-home-2-pack;
+  }
+}
+.ar-pack-home {
+  &:before {
+    content: $ar-home-pack;
+  }
+}
+.ar-pack-hourglass-1 {
+  &:before {
+    content: $ar-hourglass-1-pack;
+  }
+}
+.ar-pack-hourglass-2 {
+  &:before {
+    content: $ar-hourglass-2-pack;
+  }
+}
+.ar-pack-hourglass-3 {
+  &:before {
+    content: $ar-hourglass-3-pack;
+  }
+}
+.ar-pack-hourglass {
+  &:before {
+    content: $ar-hourglass-pack;
+  }
+}
+.ar-pack-house {
+  &:before {
+    content: $ar-house-pack;
+  }
+}
+.ar-pack-id-card-1 {
+  &:before {
+    content: $ar-id-card-1-pack;
+  }
+}
+.ar-pack-id-card-2 {
+  &:before {
+    content: $ar-id-card-2-pack;
+  }
+}
+.ar-pack-id-card-3 {
+  &:before {
+    content: $ar-id-card-3-pack;
+  }
+}
+.ar-pack-id-card-4 {
+  &:before {
+    content: $ar-id-card-4-pack;
+  }
+}
+.ar-pack-id-card-5 {
+  &:before {
+    content: $ar-id-card-5-pack;
+  }
+}
+.ar-pack-id-card {
+  &:before {
+    content: $ar-id-card-pack;
+  }
+}
+.ar-pack-idea {
+  &:before {
+    content: $ar-idea-pack;
+  }
+}
+.ar-pack-incoming {
+  &:before {
+    content: $ar-incoming-pack;
+  }
+}
+.ar-pack-infinity {
+  &:before {
+    content: $ar-infinity-pack;
+  }
+}
+.ar-pack-info {
+  &:before {
+    content: $ar-info-pack;
+  }
+}
+.ar-pack-internet {
+  &:before {
+    content: $ar-internet-pack;
+  }
+}
+.ar-pack-key {
+  &:before {
+    content: $ar-key-pack;
+  }
+}
+.ar-pack-lamp {
+  &:before {
+    content: $ar-lamp-pack;
+  }
+}
+.ar-pack-layers-1 {
+  &:before {
+    content: $ar-layers-1-pack;
+  }
+}
+.ar-pack-layers {
+  &:before {
+    content: $ar-layers-pack;
+  }
+}
+.ar-pack-like-1 {
+  &:before {
+    content: $ar-like-1-pack;
+  }
+}
+.ar-pack-like-2 {
+  &:before {
+    content: $ar-like-2-pack;
+  }
+}
+.ar-pack-like {
+  &:before {
+    content: $ar-like-pack;
+  }
+}
+.ar-pack-link {
+  &:before {
+    content: $ar-link-pack;
+  }
+}
+.ar-pack-list-1 {
+  &:before {
+    content: $ar-list-1-pack;
+  }
+}
+.ar-pack-list {
+  &:before {
+    content: $ar-list-pack;
+  }
+}
+.ar-pack-lock-1 {
+  &:before {
+    content: $ar-lock-1-pack;
+  }
+}
+.ar-pack-lock {
+  &:before {
+    content: $ar-lock-pack;
+  }
+}
+.ar-pack-locked-1 {
+  &:before {
+    content: $ar-locked-1-pack;
+  }
+}
+.ar-pack-locked-2 {
+  &:before {
+    content: $ar-locked-2-pack;
+  }
+}
+.ar-pack-locked-3 {
+  &:before {
+    content: $ar-locked-3-pack;
+  }
+}
+.ar-pack-locked-4 {
+  &:before {
+    content: $ar-locked-4-pack;
+  }
+}
+.ar-pack-locked-5 {
+  &:before {
+    content: $ar-locked-5-pack;
+  }
+}
+.ar-pack-locked-6 {
+  &:before {
+    content: $ar-locked-6-pack;
+  }
+}
+.ar-pack-locked {
+  &:before {
+    content: $ar-locked-pack;
+  }
+}
+.ar-pack-login {
+  &:before {
+    content: $ar-login-pack;
+  }
+}
+.ar-pack-magic-wand {
+  &:before {
+    content: $ar-magic-wand-pack;
+  }
+}
+.ar-pack-magnet-1 {
+  &:before {
+    content: $ar-magnet-1-pack;
+  }
+}
+.ar-pack-magnet-2 {
+  &:before {
+    content: $ar-magnet-2-pack;
+  }
+}
+.ar-pack-magnet {
+  &:before {
+    content: $ar-magnet-pack;
+  }
+}
+.ar-pack-map-1 {
+  &:before {
+    content: $ar-map-1-pack;
+  }
+}
+.ar-pack-map-2 {
+  &:before {
+    content: $ar-map-2-pack;
+  }
+}
+.ar-pack-map-location {
+  &:before {
+    content: $ar-map-location-pack;
+  }
+}
+.ar-pack-map {
+  &:before {
+    content: $ar-map-pack;
+  }
+}
+.ar-pack-megaphone-1 {
+  &:before {
+    content: $ar-megaphone-1-pack;
+  }
+}
+.ar-pack-megaphone {
+  &:before {
+    content: $ar-megaphone-pack;
+  }
+}
+.ar-pack-menu-1 {
+  &:before {
+    content: $ar-menu-1-pack;
+  }
+}
+.ar-pack-menu-2 {
+  &:before {
+    content: $ar-menu-2-pack;
+  }
+}
+.ar-pack-menu-3 {
+  &:before {
+    content: $ar-menu-3-pack;
+  }
+}
+.ar-pack-menu-4 {
+  &:before {
+    content: $ar-menu-4-pack;
+  }
+}
+.ar-pack-menu {
+  &:before {
+    content: $ar-menu-pack;
+  }
+}
+.ar-pack-microphone-1 {
+  &:before {
+    content: $ar-microphone-1-pack;
+  }
+}
+.ar-pack-microphone {
+  &:before {
+    content: $ar-microphone-pack;
+  }
+}
+.ar-pack-minus-1 {
+  &:before {
+    content: $ar-minus-1-pack;
+  }
+}
+.ar-pack-minus {
+  &:before {
+    content: $ar-minus-pack;
+  }
+}
+.ar-pack-more-1 {
+  &:before {
+    content: $ar-more-1-pack;
+  }
+}
+.ar-pack-more-2 {
+  &:before {
+    content: $ar-more-2-pack;
+  }
+}
+.ar-pack-more {
+  &:before {
+    content: $ar-more-pack;
+  }
+}
+.ar-pack-multiply-1 {
+  &:before {
+    content: $ar-multiply-1-pack;
+  }
+}
+.ar-pack-multiply {
+  &:before {
+    content: $ar-multiply-pack;
+  }
+}
+.ar-pack-music-player-1 {
+  &:before {
+    content: $ar-music-player-1-pack;
+  }
+}
+.ar-pack-music-player-2 {
+  &:before {
+    content: $ar-music-player-2-pack;
+  }
+}
+.ar-pack-music-player-3 {
+  &:before {
+    content: $ar-music-player-3-pack;
+  }
+}
+.ar-pack-music-player {
+  &:before {
+    content: $ar-music-player-pack;
+  }
+}
+.ar-pack-mute {
+  &:before {
+    content: $ar-mute-pack;
+  }
+}
+.ar-pack-muted {
+  &:before {
+    content: $ar-muted-pack;
+  }
+}
+.ar-pack-navigation-1 {
+  &:before {
+    content: $ar-navigation-1-pack;
+  }
+}
+.ar-pack-navigation {
+  &:before {
+    content: $ar-navigation-pack;
+  }
+}
+.ar-pack-network {
+  &:before {
+    content: $ar-network-pack;
+  }
+}
+.ar-pack-newspaper {
+  &:before {
+    content: $ar-newspaper-pack;
+  }
+}
+.ar-pack-next {
+  &:before {
+    content: $ar-next-pack;
+  }
+}
+.ar-pack-note {
+  &:before {
+    content: $ar-note-pack;
+  }
+}
+.ar-pack-notebook-1 {
+  &:before {
+    content: $ar-notebook-1-pack;
+  }
+}
+.ar-pack-notebook-2 {
+  &:before {
+    content: $ar-notebook-2-pack;
+  }
+}
+.ar-pack-notebook-3 {
+  &:before {
+    content: $ar-notebook-3-pack;
+  }
+}
+.ar-pack-notebook-4 {
+  &:before {
+    content: $ar-notebook-4-pack;
+  }
+}
+.ar-pack-notebook-5 {
+  &:before {
+    content: $ar-notebook-5-pack;
+  }
+}
+.ar-pack-notebook {
+  &:before {
+    content: $ar-notebook-pack;
+  }
+}
+.ar-pack-notepad-1 {
+  &:before {
+    content: $ar-notepad-1-pack;
+  }
+}
+.ar-pack-notepad-2 {
+  &:before {
+    content: $ar-notepad-2-pack;
+  }
+}
+.ar-pack-notepad {
+  &:before {
+    content: $ar-notepad-pack;
+  }
+}
+.ar-pack-notification {
+  &:before {
+    content: $ar-notification-pack;
+  }
+}
+.ar-pack-paper-plane-1 {
+  &:before {
+    content: $ar-paper-plane-1-pack;
+  }
+}
+.ar-pack-paper-plane {
+  &:before {
+    content: $ar-paper-plane-pack;
+  }
+}
+.ar-pack-pause-1 {
+  &:before {
+    content: $ar-pause-1-pack;
+  }
+}
+.ar-pack-pause {
+  &:before {
+    content: $ar-pause-pack;
+  }
+}
+.ar-pack-percent-1 {
+  &:before {
+    content: $ar-percent-1-pack;
+  }
+}
+.ar-pack-percent {
+  &:before {
+    content: $ar-percent-pack;
+  }
+}
+.ar-pack-perspective {
+  &:before {
+    content: $ar-perspective-pack;
+  }
+}
+.ar-pack-photo-camera-1 {
+  &:before {
+    content: $ar-photo-camera-1-pack;
+  }
+}
+.ar-pack-photo-camera {
+  &:before {
+    content: $ar-photo-camera-pack;
+  }
+}
+.ar-pack-photos {
+  &:before {
+    content: $ar-photos-pack;
+  }
+}
+.ar-pack-picture-1 {
+  &:before {
+    content: $ar-picture-1-pack;
+  }
+}
+.ar-pack-picture-2 {
+  &:before {
+    content: $ar-picture-2-pack;
+  }
+}
+.ar-pack-picture {
+  &:before {
+    content: $ar-picture-pack;
+  }
+}
+.ar-pack-pin {
+  &:before {
+    content: $ar-pin-pack;
+  }
+}
+.ar-pack-placeholder-1 {
+  &:before {
+    content: $ar-placeholder-1-pack;
+  }
+}
+.ar-pack-placeholder-2 {
+  &:before {
+    content: $ar-placeholder-2-pack;
+  }
+}
+.ar-pack-placeholder-3 {
+  &:before {
+    content: $ar-placeholder-3-pack;
+  }
+}
+.ar-pack-placeholder {
+  &:before {
+    content: $ar-placeholder-pack;
+  }
+}
+.ar-pack-placeholders {
+  &:before {
+    content: $ar-placeholders-pack;
+  }
+}
+.ar-pack-play-button-1 {
+  &:before {
+    content: $ar-play-button-1-pack;
+  }
+}
+.ar-pack-play-button {
+  &:before {
+    content: $ar-play-button-pack;
+  }
+}
+.ar-pack-plus {
+  &:before {
+    content: $ar-plus-pack;
+  }
+}
+.ar-pack-power {
+  &:before {
+    content: $ar-power-pack;
+  }
+}
+.ar-pack-previous {
+  &:before {
+    content: $ar-previous-pack;
+  }
+}
+.ar-pack-price-tag {
+  &:before {
+    content: $ar-price-tag-pack;
+  }
+}
+.ar-pack-print {
+  &:before {
+    content: $ar-print-pack;
+  }
+}
+.ar-pack-push-pin {
+  &:before {
+    content: $ar-push-pin-pack;
+  }
+}
+.ar-pack-radar {
+  &:before {
+    content: $ar-radar-pack;
+  }
+}
+.ar-pack-reading {
+  &:before {
+    content: $ar-reading-pack;
+  }
+}
+.ar-pack-record {
+  &:before {
+    content: $ar-record-pack;
+  }
+}
+.ar-pack-repeat-1 {
+  &:before {
+    content: $ar-repeat-1-pack;
+  }
+}
+.ar-pack-repeat {
+  &:before {
+    content: $ar-repeat-pack;
+  }
+}
+.ar-pack-restart {
+  &:before {
+    content: $ar-restart-pack;
+  }
+}
+.ar-pack-resume {
+  &:before {
+    content: $ar-resume-pack;
+  }
+}
+.ar-pack-rewind-1 {
+  &:before {
+    content: $ar-rewind-1-pack;
+  }
+}
+.ar-pack-rewind {
+  &:before {
+    content: $ar-rewind-pack;
+  }
+}
+.ar-pack-route {
+  &:before {
+    content: $ar-route-pack;
+  }
+}
+.ar-pack-save {
+  &:before {
+    content: $ar-save-pack;
+  }
+}
+.ar-pack-search-1 {
+  &:before {
+    content: $ar-search-1-pack;
+  }
+}
+.ar-pack-search {
+  &:before {
+    content: $ar-search-pack;
+  }
+}
+.ar-pack-send {
+  &:before {
+    content: $ar-send-pack;
+  }
+}
+.ar-pack-server-1 {
+  &:before {
+    content: $ar-server-1-pack;
+  }
+}
+.ar-pack-server-2 {
+  &:before {
+    content: $ar-server-2-pack;
+  }
+}
+.ar-pack-server-3 {
+  &:before {
+    content: $ar-server-3-pack;
+  }
+}
+.ar-pack-server {
+  &:before {
+    content: $ar-server-pack;
+  }
+}
+.ar-pack-settings-1 {
+  &:before {
+    content: $ar-settings-1-pack;
+  }
+}
+.ar-pack-settings-2 {
+  &:before {
+    content: $ar-settings-2-pack;
+  }
+}
+.ar-pack-settings-3 {
+  &:before {
+    content: $ar-settings-3-pack;
+  }
+}
+.ar-pack-settings-4 {
+  &:before {
+    content: $ar-settings-4-pack;
+  }
+}
+.ar-pack-settings-5 {
+  &:before {
+    content: $ar-settings-5-pack;
+  }
+}
+.ar-pack-settings-6 {
+  &:before {
+    content: $ar-settings-6-pack;
+  }
+}
+.ar-pack-settings-7 {
+  &:before {
+    content: $ar-settings-7-pack;
+  }
+}
+.ar-pack-settings-8 {
+  &:before {
+    content: $ar-settings-8-pack;
+  }
+}
+.ar-pack-settings-9 {
+  &:before {
+    content: $ar-settings-9-pack;
+  }
+}
+.ar-pack-settings {
+  &:before {
+    content: $ar-settings-pack;
+  }
+}
+.ar-pack-share-1 {
+  &:before {
+    content: $ar-share-1-pack;
+  }
+}
+.ar-pack-share-2 {
+  &:before {
+    content: $ar-share-2-pack;
+  }
+}
+.ar-pack-share {
+  &:before {
+    content: $ar-share-pack;
+  }
+}
+.ar-pack-shuffle-1 {
+  &:before {
+    content: $ar-shuffle-1-pack;
+  }
+}
+.ar-pack-shuffle {
+  &:before {
+    content: $ar-shuffle-pack;
+  }
+}
+.ar-pack-shutdown {
+  &:before {
+    content: $ar-shutdown-pack;
+  }
+}
+.ar-pack-sign-1 {
+  &:before {
+    content: $ar-sign-1-pack;
+  }
+}
+.ar-pack-sign {
+  &:before {
+    content: $ar-sign-pack;
+  }
+}
+.ar-pack-skip {
+  &:before {
+    content: $ar-skip-pack;
+  }
+}
+.ar-pack-smartphone-1 {
+  &:before {
+    content: $ar-smartphone-1-pack;
+  }
+}
+.ar-pack-smartphone-2 {
+  &:before {
+    content: $ar-smartphone-2-pack;
+  }
+}
+.ar-pack-smartphone-3 {
+  &:before {
+    content: $ar-smartphone-3-pack;
+  }
+}
+.ar-pack-smartphone-4 {
+  &:before {
+    content: $ar-smartphone-4-pack;
+  }
+}
+.ar-pack-smartphone-5 {
+  &:before {
+    content: $ar-smartphone-5-pack;
+  }
+}
+.ar-pack-smartphone-6 {
+  &:before {
+    content: $ar-smartphone-6-pack;
+  }
+}
+.ar-pack-smartphone-7 {
+  &:before {
+    content: $ar-smartphone-7-pack;
+  }
+}
+.ar-pack-smartphone-8 {
+  &:before {
+    content: $ar-smartphone-8-pack;
+  }
+}
+.ar-pack-smartphone-9 {
+  &:before {
+    content: $ar-smartphone-9-pack;
+  }
+}
+.ar-pack-smartphone-10 {
+  &:before {
+    content: $ar-smartphone-10-pack;
+  }
+}
+.ar-pack-smartphone-11 {
+  &:before {
+    content: $ar-smartphone-11-pack;
+  }
+}
+.ar-pack-smartphone {
+  &:before {
+    content: $ar-smartphone-pack;
+  }
+}
+.ar-pack-speaker-1 {
+  &:before {
+    content: $ar-speaker-1-pack;
+  }
+}
+.ar-pack-speaker-2 {
+  &:before {
+    content: $ar-speaker-2-pack;
+  }
+}
+.ar-pack-speaker-3 {
+  &:before {
+    content: $ar-speaker-3-pack;
+  }
+}
+.ar-pack-speaker-4 {
+  &:before {
+    content: $ar-speaker-4-pack;
+  }
+}
+.ar-pack-speaker-5 {
+  &:before {
+    content: $ar-speaker-5-pack;
+  }
+}
+.ar-pack-speaker-6 {
+  &:before {
+    content: $ar-speaker-6-pack;
+  }
+}
+.ar-pack-speaker-7 {
+  &:before {
+    content: $ar-speaker-7-pack;
+  }
+}
+.ar-pack-speaker-8 {
+  &:before {
+    content: $ar-speaker-8-pack;
+  }
+}
+.ar-pack-speaker {
+  &:before {
+    content: $ar-speaker-pack;
+  }
+}
+.ar-pack-spotlight {
+  &:before {
+    content: $ar-spotlight-pack;
+  }
+}
+.ar-pack-star-1 {
+  &:before {
+    content: $ar-star-1-pack;
+  }
+}
+.ar-pack-star {
+  &:before {
+    content: $ar-star-pack;
+  }
+}
+.ar-pack-stop-1 {
+  &:before {
+    content: $ar-stop-1-pack;
+  }
+}
+.ar-pack-stop {
+  &:before {
+    content: $ar-stop-pack;
+  }
+}
+.ar-pack-stopwatch-1 {
+  &:before {
+    content: $ar-stopwatch-1-pack;
+  }
+}
+.ar-pack-stopwatch-2 {
+  &:before {
+    content: $ar-stopwatch-2-pack;
+  }
+}
+.ar-pack-stopwatch-3 {
+  &:before {
+    content: $ar-stopwatch-3-pack;
+  }
+}
+.ar-pack-stopwatch-4 {
+  &:before {
+    content: $ar-stopwatch-4-pack;
+  }
+}
+.ar-pack-stopwatch {
+  &:before {
+    content: $ar-stopwatch-pack;
+  }
+}
+.ar-pack-street-1 {
+  &:before {
+    content: $ar-street-1-pack;
+  }
+}
+.ar-pack-street {
+  &:before {
+    content: $ar-street-pack;
+  }
+}
+.ar-pack-substract-1 {
+  &:before {
+    content: $ar-substract-1-pack;
+  }
+}
+.ar-pack-substract {
+  &:before {
+    content: $ar-substract-pack;
+  }
+}
+.ar-pack-success {
+  &:before {
+    content: $ar-success-pack;
+  }
+}
+.ar-pack-switch-1 {
+  &:before {
+    content: $ar-switch-1-pack;
+  }
+}
+.ar-pack-switch-2 {
+  &:before {
+    content: $ar-switch-2-pack;
+  }
+}
+.ar-pack-switch-3 {
+  &:before {
+    content: $ar-switch-3-pack;
+  }
+}
+.ar-pack-switch-4 {
+  &:before {
+    content: $ar-switch-4-pack;
+  }
+}
+.ar-pack-switch-5 {
+  &:before {
+    content: $ar-switch-5-pack;
+  }
+}
+.ar-pack-switch-6 {
+  &:before {
+    content: $ar-switch-6-pack;
+  }
+}
+.ar-pack-switch-7 {
+  &:before {
+    content: $ar-switch-7-pack;
+  }
+}
+.ar-pack-switch {
+  &:before {
+    content: $ar-switch-pack;
+  }
+}
+.ar-pack-tabs-1 {
+  &:before {
+    content: $ar-tabs-1-pack;
+  }
+}
+.ar-pack-tabs {
+  &:before {
+    content: $ar-tabs-pack;
+  }
+}
+.ar-pack-target {
+  &:before {
+    content: $ar-target-pack;
+  }
+}
+.ar-pack-television-1 {
+  &:before {
+    content: $ar-television-1-pack;
+  }
+}
+.ar-pack-television {
+  &:before {
+    content: $ar-television-pack;
+  }
+}
+.ar-pack-time {
+  &:before {
+    content: $ar-time-pack;
+  }
+}
+.ar-pack-trash {
+  &:before {
+    content: $ar-trash-pack;
+  }
+}
+.ar-pack-umbrella {
+  &:before {
+    content: $ar-umbrella-pack;
+  }
+}
+.ar-pack-unlink {
+  &:before {
+    content: $ar-unlink-pack;
+  }
+}
+.ar-pack-unlocked-1 {
+  &:before {
+    content: $ar-unlocked-1-pack;
+  }
+}
+.ar-pack-unlocked-2 {
+  &:before {
+    content: $ar-unlocked-2-pack;
+  }
+}
+.ar-pack-unlocked {
+  &:before {
+    content: $ar-unlocked-pack;
+  }
+}
+.ar-pack-upload {
+  &:before {
+    content: $ar-upload-pack;
+  }
+}
+.ar-pack-user-1 {
+  &:before {
+    content: $ar-user-1-pack;
+  }
+}
+.ar-pack-user-2 {
+  &:before {
+    content: $ar-user-2-pack;
+  }
+}
+.ar-pack-user-3 {
+  &:before {
+    content: $ar-user-3-pack;
+  }
+}
+.ar-pack-user-4 {
+  &:before {
+    content: $ar-user-4-pack;
+  }
+}
+.ar-pack-user-5 {
+  &:before {
+    content: $ar-user-5-pack;
+  }
+}
+.ar-pack-user-6 {
+  &:before {
+    content: $ar-user-6-pack;
+  }
+}
+.ar-pack-user-7 {
+  &:before {
+    content: $ar-user-7-pack;
+  }
+}
+.ar-pack-user {
+  &:before {
+    content: $ar-user-pack;
+  }
+}
+.ar-pack-users-1 {
+  &:before {
+    content: $ar-users-1-pack;
+  }
+}
+.ar-pack-users {
+  &:before {
+    content: $ar-users-pack;
+  }
+}
+.ar-pack-video-camera-1 {
+  &:before {
+    content: $ar-video-camera-1-pack;
+  }
+}
+.ar-pack-video-camera {
+  &:before {
+    content: $ar-video-camera-pack;
+  }
+}
+.ar-pack-video-player-1 {
+  &:before {
+    content: $ar-video-player-1-pack;
+  }
+}
+.ar-pack-video-player-2 {
+  &:before {
+    content: $ar-video-player-2-pack;
+  }
+}
+.ar-pack-video-player {
+  &:before {
+    content: $ar-video-player-pack;
+  }
+}
+.ar-pack-view-1 {
+  &:before {
+    content: $ar-view-1-pack;
+  }
+}
+.ar-pack-view-2 {
+  &:before {
+    content: $ar-view-2-pack;
+  }
+}
+.ar-pack-view {
+  &:before {
+    content: $ar-view-pack;
+  }
+}
+.ar-pack-volume-control-1 {
+  &:before {
+    content: $ar-volume-control-1-pack;
+  }
+}
+.ar-pack-volume-control {
+  &:before {
+    content: $ar-volume-control-pack;
+  }
+}
+.ar-pack-warning {
+  &:before {
+    content: $ar-warning-pack;
+  }
+}
+.ar-pack-wifi-1 {
+  &:before {
+    content: $ar-wifi-1-pack;
+  }
+}
+.ar-pack-wifi {
+  &:before {
+    content: $ar-wifi-pack;
+  }
+}
+.ar-pack-windows-1 {
+  &:before {
+    content: $ar-windows-1-pack;
+  }
+}
+.ar-pack-windows-2 {
+  &:before {
+    content: $ar-windows-2-pack;
+  }
+}
+.ar-pack-windows-3 {
+  &:before {
+    content: $ar-windows-3-pack;
+  }
+}
+.ar-pack-windows-4 {
+  &:before {
+    content: $ar-windows-4-pack;
+  }
+}
+.ar-pack-windows {
+  &:before {
+    content: $ar-windows-pack;
+  }
+}
+.ar-pack-wireless-internet {
+  &:before {
+    content: $ar-wireless-internet-pack;
+  }
+}
+.ar-pack-worldwide-1 {
+  &:before {
+    content: $ar-worldwide-1-pack;
+  }
+}
+.ar-pack-worldwide {
+  &:before {
+    content: $ar-worldwide-pack;
+  }
+}
+.ar-pack-zoom-in {
+  &:before {
+    content: $ar-zoom-in-pack;
+  }
+}
+.ar-pack-zoom-out {
+  &:before {
+    content: $ar-zoom-out-pack;
+  }
+}
+
