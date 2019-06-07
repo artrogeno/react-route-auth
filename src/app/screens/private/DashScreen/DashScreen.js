@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { Container, Row, Col, Button } from 'reactstrap'
+import { Container, Row, Col, Button, UncontrolledTooltip } from 'reactstrap'
 
 import { setStorage } from 'app/utils'
 import { AuthContext } from 'app/contexts/Auth/AuthContext'
 
-const DashScreen = (props) => {
+const DashScreen = () => {
   const { config, changeAuth } = useContext(AuthContext)
 
   const logout = () => {
@@ -27,6 +27,12 @@ const DashScreen = (props) => {
           <Button outline color='secondary' size='lg' className="text-uppercase" block onClick={logout}>
             <span>Logout</span>
           </Button>
+        </Col>
+        <Col md={4}>
+          <p>Somewhere in here is a <span style={{textDecoration: "underline", color:"blue"}} href="#" id="UncontrolledTooltipExample">tooltip</span>.</p>
+          <UncontrolledTooltip placement="right" target="UncontrolledTooltipExample">
+            Hello world!
+          </UncontrolledTooltip>
         </Col>
       </Row>
     </Container>

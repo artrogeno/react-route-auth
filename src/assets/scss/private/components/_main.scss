@@ -1,0 +1,26 @@
+.Main {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: block;
+  overflow-x: scroll;
+  min-height: calc(100% - 128px);
+  width: 100%;
+  margin-top: 0;
+  transition: 0.3s all linear;
+  // background-color: rgb(79, 192, 69) #F7F7F8;
+
+  &.closed {
+    max-width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+  &.opened {
+    max-width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+}
+
+.theme-dark {
+  .Main {
+    background-color: $gray-300;
+  }
+}

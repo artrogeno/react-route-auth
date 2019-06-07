@@ -3,6 +3,7 @@ import { getStorage } from '../../utils'
 
 export const layoutDefault = {
   appTitle: getStorage('app-title') || 'Artrogeno',
+  theme: 'theme-dark',
   sidebar: true,
   match: {},
   location: {},

@@ -3,11 +3,13 @@ import { NavLink } from 'react-router-dom'
 import {
   Navbar, NavbarBrand, Nav, NavItem, NavLink as NavbarLink,
   UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-  UncontrolledTooltip
+  UncontrolledTooltip, Badge, Button
 } from 'reactstrap'
 
+import { setStorage } from 'app/utils'
 import { AuthContext } from 'app/contexts/Auth/AuthContext'
 import { LayoutPrivateContext } from 'app/contexts/LayoutPrivate/LayoutPrivate'
+import { NotificationContext } from 'app/contexts/Notification/NotificationContext'
 import Hamburger from 'app/components/private/UI/Hamburger/Hamburger'
 
 import ImgProfile from 'assets/img/profile.jpg'
@@ -15,7 +17,14 @@ import './Header.scss'
 
 const Header = () => {
   let { layout, toggleSideBar} = useContext(LayoutPrivateContext)
-  let { config: { user } } = useContext(AuthContext)
+  let { notification, toggleSideNotification } = useContext(NotificationContext)
+  let { config: { user }, changeAuth } = useContext(AuthContext)
+
+  const logout = () => {
+    setStorage('is-auth', false)
+    setStorage('auth-user', '')
+    changeAuth()
+  }
 
   const sideBrand = (status) => {
     let classes = ['mr-0', 'text-light', 'header-brand']
@@ -24,7 +33,7 @@ const Header = () => {
   }
 
   return (
-    <header className={`header-top-admin ${layout.sidebar ? 'opened' : 'closed'}`}>
+    <header className={`header-top-admin ${layout.theme} ${layout.sidebar ? 'opened' : 'closed'}`}>
       <Navbar color='admin-dark' fixed='top' dark expand='md' className='header-navbar'>
         <NavbarBrand onClick={toggleSideBar} tag='div' className={sideBrand(layout.sidebar)}>
           <Hamburger />
@@ -78,7 +87,7 @@ const Header = () => {
                   <span className="icon ar-pack-controls-4"></span>
                   <span className='title'>Settings</span>
                 </DropdownItem>
-                <DropdownItem className='d-flex align-self-center justify-content-center'>
+                <DropdownItem className='d-flex align-self-center justify-content-center' onClick={logout}>
                   <span className="icon ar-pack-power"></span>
                   <span className='title'>Logout</span>
                 </DropdownItem>
@@ -95,58 +104,28 @@ const Header = () => {
               </UncontrolledTooltip>
             </NavItem>
             <NavItem className='p-r-rem-0-4'>
-              <NavbarLink className='btn--transparence btn--hover btn--circle btn-icon w-30 h-30' id='TooltipNotification'>
+              <NavbarLink className='btn--transparence btn--hover btn--circle btn-icon w-30 h-30' id='TooltipPages'>
                 <span className='icon ar-pack-layers size-rem-1-4'></span>
+              </NavbarLink>
+              <UncontrolledTooltip placement='bottom' target='TooltipPages'>
+                Pages
+              </UncontrolledTooltip>
+            </NavItem>
+            <NavItem className='p-r-rem-0-8'>
+              <NavbarLink className='btn--transparence btn--hover btn--circle btn-icon w-30 h-30 text-pointer' id='TooltipNotification' onClick={toggleSideNotification}>
+                <span className='icon ar-pack-alarm size-rem-1-4'></span>
+                { notification.count > 0 ? <Badge color="warning" className='notification-badge'>{ notification.count }</Badge> : null}
               </NavbarLink>
               <UncontrolledTooltip placement='bottom' target='TooltipNotification'>
                 Notifications
               </UncontrolledTooltip>
             </NavItem>
           </Nav>
-            {/*
-            <Nav className='ml-auto' navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret className='nav-text-link btn--hover btn--transparence btn-dropdown'>
-                  <span className='border--circle w-30 h-30'>
-                    <img src={ImgProfile} className='h-30' alt='Profile' />
-                  </span>
-                  <span> Options </span>
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem className='p-r-rem-0-4'>
-                <NavbarLink className='btn--transparence btn--hover btn--circle btn-icon w-30 h-30' id='TooltipSearch'>
-                  <span className='icon ar-pack-search-1 size-rem-1-4'></span>
-                </NavbarLink>
-                <UncontrolledTooltip placement='bottom' target='TooltipSearch'>
-                  Search
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem className='p-r-rem-0-4'>
-                <NavbarLink className='btn--transparence btn--hover btn--circle btn-icon w-30 h-30' id='TooltipNotification'>
-                  <span className='icon ar-pack-layers size-rem-1-4'></span>
-                </NavbarLink>
-                <UncontrolledTooltip placement='bottom' target='TooltipNotification'>
-                  Notifications
-                </UncontrolledTooltip>
-              </NavItem>
-            </Nav>
-            */}
-
         </div>
         <div className='header-chat'>
-
+          <Button className='w-40 h-40 text-pointer btn--transparence border-none'>
+            <span className='icon ar-pack-menu-4 size-rem-1-6'></span>
+          </Button>
         </div>
       </Navbar>
     </header>

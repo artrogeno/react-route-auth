@@ -9,51 +9,66 @@ import {
 import { LayoutPrivateContext } from 'app/contexts/LayoutPrivate/LayoutPrivate'
 import SideArrow from 'app/components/private/UI/SideArrow/SideArrow'
 
-import './Sidebar.scss'
-
-
 const Sidebar = () => {
   let { layout, toggleSideBar} = useContext(LayoutPrivateContext)
 
   const sideNav = (status) => {
-    let classes = ['Sidebar', 'd-none', 'd-md-block', 'bg-dark']
+    let classes = ['Sidebar', 'sidebar-left', 'sidebar-dark', 'd-none', 'd-md-block']
     classes.push(status ? 'opened' : 'closed')
     return classes.join(' ')
   }
 
   return (
     <Nav vertical className={sideNav(layout.sidebar)}>
-      <div className="sidebar-sticky">
+      <div className='sidebar-sticky'>
         <NavItem>
-          <NavLink to="/app/dashboard">
-            <span className="icon ar-pack-database"></span>
-            <span className="title">Dash</span>
+          <NavLink to='/app/dashboard'>
+            <span className='icon ar-pack-database'></span>
+            <span className='title'>Dash</span>
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/app/report">
-          <span className="icon ar-pack-document"></span>
-            <span className="title">Reports</span>
+          <NavLink to='/app/report'>
+          <span className='icon ar-pack-document'></span>
+            <span className='title'>Reports</span>
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavbarLink id="reports" className="dropdown">
-            <span className="icon ar-pack-idea"></span>
-            <span className="title">Playground</span>
+          <NavbarLink id='pages' className='dropdown'>
+            <span className='icon ar-pack-tabs'></span>
+            <span className='title'>Page</span>
           </NavbarLink>
         </NavItem>
-        <UncontrolledCollapse toggler="reports">
+        <UncontrolledCollapse toggler='pages'>
           <ListGroup>
-            <NavLink to="/report" className="list-group-item-action list-group-item">
-              Reports
+            <NavLink to='/app/pages/home' className='list-group-item-action list-group-item'>
+              <span className='icon ar-pack-menu-1'></span>
+              <span className='title'>Home</span>
             </NavLink>
-            <ListGroupItem tag="a">Dapibus ac facilisis in</ListGroupItem>
-            <ListGroupItem tag="a">Morbi leo risus</ListGroupItem>
-            <ListGroupItem tag="a">Porta ac consectetur ac</ListGroupItem>
+            <NavLink to='/app/pages/about' className='list-group-item-action list-group-item'>
+              <span className='icon ar-pack-menu-1'></span>
+              <span className='title'>About</span>
+            </NavLink>
+            <ListGroupItem tag='a'>
+              <span className='icon ar-pack-menu-1'></span>
+              <span className='title'>Test 1</span>
+            </ListGroupItem>
+            <ListGroupItem tag='a'>
+              <span className='icon ar-pack-menu-1'></span>
+              <span className='title'>Test 1</span>
+            </ListGroupItem>
           </ListGroup>
         </UncontrolledCollapse>
+        <NavItem>
+          <NavLink to='/app/profile'>
+            <span className='icon ar-pack-user-3'></span>
+            <span className='title'>Profile</span>
+          </NavLink>
+        </NavItem>
 
-        <NavItem className="btn-fixed-bottom">
+
+
+        <NavItem className='btn-fixed-bottom'>
           <Button onClick={toggleSideBar}>
             <SideArrow />
           </Button>

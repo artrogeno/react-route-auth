@@ -9,10 +9,21 @@ $header-chat-width: 70px;
   width: 100%;
   height: $height-nav;
 
+  &.theme-dark {
+    .header-navbar {
+      .header-chat {
+        background-color: rgba($gray-800, .8);
+        &:hover {
+          background-color: rgba($gray-700, .7);
+        }
+      }
+    }
+  }
+
   .header-navbar {
     height: $height-nav;
     color: $color-nav-fonts;
-    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 4px -1px rgba($black, 0.2), 0px 4px 5px 0px rgba($black, 0.14), 0px 1px 10px 0px rgba($black, 0.12);
     padding-left: 0;
     padding-right: 0;
 
@@ -84,12 +95,24 @@ $header-chat-width: 70px;
           object-fit: cover;
         }
       }
+
+      .notification-badge {
+        position: absolute;
+        top: 1.8rem;
+        margin-left: 1rem;
+      }
     }
 
     .header-chat {
       width: $header-chat-width;
       height: $height-nav;
-      background-color: red;
+      outline: none !important;
+      transition: all 0.5s ease-out;
+      button {
+        &, &:active:focus {
+          box-shadow: none;
+        }
+      }
     }
 
   }
@@ -115,7 +138,7 @@ $header-chat-width: 70px;
         opacity: 0;
         z-index: 0;
         overflow: hidden;
-        left: -1rem;
+        top: -1rem;
       }
     }
   }

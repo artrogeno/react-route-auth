@@ -1,0 +1,230 @@
+.side-notifications {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  overflow: scroll;
+  z-index: 1050;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1rem;
+  box-shadow: 0px 8px 10px -5px rgba($black ,0.2),
+    0px 16px 24px 2px rgba($black ,0.14),
+    0px 6px 30px 5px rgba($black ,0.12);
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+
+  .container-notifications {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    z-index: 1200;
+    outline: none;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+
+  .event-notifications,
+  .note-notifications {
+    flex-direction: column;
+    display: flex;
+    padding: 1.2rem 1.4rem;
+    width: 100%;
+
+    .item-notifications {
+      position: relative;
+      float: left;
+
+      span {
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 1.4;
+      }
+      p {
+        font-size: .8rem;
+        font-weight: 200;
+        line-height: 2;
+      }
+    }
+  }
+
+  .settings-notifications {
+    flex-direction: column;
+    display: flex;
+    padding: 1.2rem 1.4rem;
+    width: 100%;
+
+    .inputs-notifications {
+      display: flex !important;
+      width: 260px;
+      padding: .4rem 0;
+      div {
+        font-size: .8rem;
+        font-weight: 200;
+        &:nth-of-type(1) {
+          width: 2.8rem;
+        }
+        &:nth-of-type(2) {
+          width: 160px;
+        }
+      }
+    }
+  }
+
+  .btn-close-notification {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &.theme-dark {
+    background-color: $gray-901;
+    color: $white;
+
+    .btn-close-notification {
+      background-color: transparent;
+      border-color: rgba($white, .8);
+      opacity: .8;
+      width: 1.6rem !important;
+      height: 1.6rem !important;
+      color: $white;
+      cursor: pointer;
+      &:hover {
+        border-color: rgba($white, .9);
+        opacity: .9;
+      }
+    }
+    a {
+      color: $gray-400;
+    }
+
+    .subheader-notifications {
+      color: rgba($white, 0.84);
+    }
+
+    .divider-notifications {
+      background-color: rgba($white, 0.12);
+    }
+
+
+    .today-notifications {
+      color: rgba($white, 0.64);
+    }
+
+    .item-notifications {
+      span {
+        color: rgba($white, 0.84);
+      }
+      p {
+        color: rgba($white, 0.64);
+      }
+    }
+
+    .settings-notifications {
+      .inputs-notifications {
+        div {
+          color: rgba($white, 0.84);
+        }
+      }
+    }
+  }
+
+
+  &.opened {
+    width: 18rem;
+    z-index: 1050;
+    .btn-close-notification {
+      position: fixed;
+      top: 0.6rem;
+      right: 0.6rem;
+      padding: 0.4rem;
+      opacity: 1;
+      z-index: 10;
+    }
+  }
+
+  &.closed {
+    width: 0;
+    z-index: 1050;
+    .btn-close-notification {
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+
+  .subheader-notifications {
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background-color: inherit;
+    font-size: .8rem;
+    margin-left: 1.2rem;
+    margin-top: 0.8rem;
+  }
+
+  .today-notifications {
+    padding: 1.8rem 1.4rem;
+    margin-bottom: 0;
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+    .date-notifications {
+      display: flex;
+      outline: none;
+      div {
+        font-weight: 200;
+        line-height: 1;
+        &:nth-of-type(1), &:nth-of-type(3) {
+          font-size: 2.6rem;
+        }
+        &:nth-of-type(2) {
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+  }
+
+  .divider-notifications {
+    height: 1px;
+    margin: 0;
+    border: none;
+    flex-shrink: 0;
+  }
+
+  @media screen and (max-height: 450px) {
+    & {padding-top: 15px;}
+    & a {font-size: 18px;}
+  }
+}
+
+.backdrop-notifications {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba($black, .8);
+  transition: opacity 0.15s linear;
+
+  &.opened {
+    opacity: 1;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &.closed {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}

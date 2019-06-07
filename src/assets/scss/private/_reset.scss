@@ -5,9 +5,9 @@
 @mixin loop-element($nameElement, $atributeName, $baseCalc, $typeOfElementCalc, $length) {
   @for $i from 1 through $length {
     @if $i == 1 {
-      .#{$nameElement}0 { #{$atributeName}: 0 + $typeOfElementCalc };
+      .#{$nameElement}0 { #{$atributeName}: #{ 0 + $typeOfElementCalc } !important; }
     }
-    .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + $typeOfElementCalc }; }
+    .#{$nameElement}#{$i * $baseCalc } { #{$atributeName}: #{( $i * $baseCalc ) + $typeOfElementCalc } !important; }
   }
 }
 
@@ -34,66 +34,157 @@
 
 // margin
 @include loop-element( 'm--', 'margin', 1, 'px', 100 );
+@include loop-element-dot( 'm-rem-', 'margin', 1, 'rem !important', 100 );
 
 // margin-left
 @include loop-element( 'm-l-', 'margin-left', 1, 'px', 100 );
+@include loop-element-dot( 'm-l-rem-', 'margin-left', 1, 'rem !important', 100 );
 
 // margin-right
 @include loop-element( 'm-r-', 'margin-right', 1, 'px', 100 );
+@include loop-element-dot( 'm-r-rem-', 'margin-right', 1, 'rem !important', 100 );
 
 // margin-top
 @include loop-element( 'm-t-', 'margin-top', 1, 'px', 100 );
+@include loop-element-dot( 'm-t-rem-', 'margin-top', 1, 'rem !important', 100 );
 
 // margin-bottom
 @include loop-element( 'm-b-', 'margin-bottom', 1, 'px', 100 );
+@include loop-element-dot( 'm-b-rem-', 'margin-bottom', 1, 'rem !important', 100 );
 
 // padding
 @include loop-element( 'p--', 'padding', 1, 'px', 100 );
-@include loop-element-dot( 'p-rem-', 'padding', 1, 'rem', 10 );
+@include loop-element-dot( 'p-rem-', 'padding', 1, 'rem !important', 100 );
 
 // padding-left
 @include loop-element( 'p-l-', 'padding-left', 1, 'px', 100 );
-@include loop-element-dot( 'p-l-rem-', 'padding-left', 1, 'rem', 10 );
+@include loop-element-dot( 'p-l-rem-', 'padding-left', 1, 'rem !important', 10 );
 
 // padding-right
 @include loop-element( 'p-r-', 'padding-right', 1, 'px', 100 );
-@include loop-element-dot( 'p-r-rem-', 'padding-right', 1, 'rem', 10 );
+@include loop-element-dot( 'p-r-rem-', 'padding-right', 1, 'rem !important', 10 );
 
 // padding-top
 @include loop-element( 'p-t-', 'padding-top', 1, 'px', 100 );
-@include loop-element-dot( 'p-t-rem-', 'padding-top', 1, 'rem', 10 );
+@include loop-element-dot( 'p-t-rem-', 'padding-top', 1, 'rem !important', 10 );
 
 // padding-bottom
 @include loop-element( 'p-b-', 'padding-bottom', 1, 'px', 100 );
-@include loop-element-dot( 'p-b-rem-', 'padding-bottom', 1, 'rem', 10 );
+@include loop-element-dot( 'p-b-rem-', 'padding-bottom', 1, 'rem !important', 10 );
 
+.no-padding { padding: 0px !important; }
+.no-margin { margin: 0px !important; }
 
 // Font-size
 @include loop-element-dot( 'size-rem-', 'font-size', 1, 'rem', 10 );
 
 // size HxW
-.w-10 { width: 1rem; }
-.w-20 { width: 2rem; }
-.w-30 { width: 3rem; }
-.w-40 { width: 4rem; }
-.w-50 { width: 5rem; }
-.w-60 { width: 6rem; }
-.w-80 { width: 8rem; }
-.w-90 { width: 9rem; }
-.w-100 { width: 10rem; }
+@include loop-element-dot( 'w-rem-', 'width', 1, 'rem !important', 100 );
+@include loop-element-dot( 'h-rem-', 'height', 1, 'rem !important', 100 );
 
-.h-10 { height: 1rem; }
-.h-20 { height: 2rem; }
-.h-30 { height: 3rem; }
-.h-40 { height: 4rem; }
-.h-50 { height: 5rem; }
-.h-60 { height: 6rem; }
-.h-80 { height: 8rem; }
-.h-90 { height: 9rem; }
-.h-100 { height: 10rem; }
+.w-10 { width: 1rem !important; }
+.w-20 { width: 2rem !important; }
+.w-30 { width: 3rem !important; }
+.w-40 { width: 4rem !important; }
+.w-50 { width: 5rem !important; }
+.w-60 { width: 6rem !important; }
+.w-80 { width: 8rem !important; }
+.w-90 { width: 9rem !important; }
+.w-100 { width: 10rem !important; }
+.w-per-100 { width: 100% !important; }
 
+.h-10 { height: 1rem !important; }
+.h-20 { height: 2rem !important; }
+.h-30 { height: 3rem !important; }
+.h-40 { height: 4rem !important; }
+.h-50 { height: 5rem !important; }
+.h-60 { height: 6rem !important; }
+.h-80 { height: 8rem !important; }
+.h-90 { height: 9rem !important; }
+.h-100 { height: 10rem !important; }
+.h-per-100 { height: 100% !important; }
+
+
+//  ----------------
+//  Border size
+//  ----------------
+
+@include loop-element( 'border-w-', 'border-width', 1, 'px', 10 );
+
+.border-none { border: none !important; }
+
+// Border color
+.bo-white { border: solid var(--white); }
+.bo-gray-300 { border: solid $gray-300; }
+.bo-gray-100 { border: solid $gray-100; }
+.bo-gray-200 { border: solid $gray-200; }
+.bo-gray-300 { border: solid $gray-300; }
+.bo-gray-400 { border: solid $gray-400; }
+.bo-gray-500 { border: solid $gray-500; }
+.bo-gray-600 { border: solid $gray-600; }
+.bo-gray-700 { border: solid $gray-700; }
+.bo-gray-800 { border: solid $gray-800; }
+.bo-gray-900 { border: solid $gray-900; }
+.bo-black { border: solid $black; }
 
 // Border circle
 .border--circle {
   border-radius: 50%;
+}
+
+//  ----------------
+//  Image
+//  ----------------
+.section-image {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  .position-image-top {
+    background-position: center top;
+  }
+  .position-image-bottom {
+    background-position: center bottom;
+  }
+  &:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  div, .container, .container-fluid {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+
+//  ----------------
+//  Avata
+//  ----------------
+.avatar-circle {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+//  ----------------
+//  Text
+//  ----------------
+.text-pointer {
+  cursor: pointer;
 }

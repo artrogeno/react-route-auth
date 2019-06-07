@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react'
-import { Row, Col, Form, FormGroup, Input, Button } from 'reactstrap'
+import { Row, Col, Form, FormGroup, Input, Label, Button } from 'reactstrap'
 
 import { setStorage } from 'app/utils'
 import { AuthContext } from 'app/contexts/Auth/AuthContext'
@@ -7,12 +7,12 @@ import { LoadContext } from 'app/contexts/Load/LoadContext'
 import { AuthLayout } from 'app/layout'
 
 const AuthScreen = (props) => {
-  const {config, changeAuth } = useContext(AuthContext)
+  const { changeAuth } = useContext(AuthContext)
   const { changeLoad } = useContext(LoadContext)
   const [login, setLogin] = useState({})
 
   const authChange = ({ target: { value, name } }) => {
-    let updateLogin = {...login};
+    let updateLogin = { ...login };
     updateLogin[name] = value
     setLogin(updateLogin)
   }
@@ -29,17 +29,16 @@ const AuthScreen = (props) => {
 
   const submitForm = () => {
     // response http and logic for persist data on storage
-    let _auth = { user: 'Arthur Costa', isAuth: true }
     // set data in session storage
-    setStorage('is-auth', _auth.isAuth)
-    setStorage('auth-user', _auth.user)
+    setStorage('is-auth', true)
+    setStorage('auth-user', login.user)
 
     // update data context
     changeAuth()
     changeLoad()
     setTimeout(() => {
       changeLoad()
-      props.history.push('/app/dash')
+      props.history.push('/app/dashboard')
     }, 3000)
   }
 
@@ -47,34 +46,48 @@ const AuthScreen = (props) => {
     <AuthLayout>
       <Row noGutters className='d-flex justify-content-center'>
         <Col md={8}>
-          <h2 className="text-center">Test</h2>
-          <h1>{JSON.stringify(config)}</h1>
+          <h2 className='text-center'>Login</h2>
         </Col>
         <Col md={8}>
-          <Form className="LoginForm" onSubmit={submitForm}>
+          <Form className='LoginForm pretty-forms'>
             <Row>
               <Col md={12}>
                 <FormGroup>
-                  <Input type="text" name="user" placeholder="E-mail or username" onChange={authChange} />
+                  <Input type='text' name='user' onChange={authChange} required />
+                  <Label for='input' className='control-label'>E-mail or nickname</Label>
+                  <i className='bar'></i>
                 </FormGroup>
+
                 <FormGroup>
-                  <Input type="password" name="password" placeholder="Password" onChange={authChange}/>
+                  <Input type='password' name='password' onChange={authChange} required />
+                  <Label for='input' className='control-label'>Password</Label>
+                  <i className='bar'></i>
                 </FormGroup>
-                <FormGroup>
-                  <Button type="submit" className="text-uppercase btn-purple" block disabled={validateDataForm()}>
-                    <span>Login</span>
-                  </Button>
-                  <Button className="text-uppercase btn-purple" block onClick={submitForm}>
-                    <span>Test</span>
-                  </Button>
-                </FormGroup>
+              </Col>
+              <Col md={6}>
+                <div className="checkbox">
+                  <label className='d-flex justify-content-start align-items-center'>
+                    <Input type="checkbox" />
+                    <i className="helper"></i>Remember Me
+                  </label>
+                </div>
+              </Col>
+              <Col md={6}>
+                <Button color="link" className='m-t-5'>Forgot Password?</Button>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={12}>
+                <Button className='text-uppercase' color='dark' block disabled={validateDataForm()} onClick={submitForm}>
+                  <span>Login</span>
+                </Button>
               </Col>
             </Row>
           </Form>
         </Col>
       </Row>
     </AuthLayout>
-  )
-}
+      )
+    }
 
-export default AuthScreen
+    export default AuthScreen
